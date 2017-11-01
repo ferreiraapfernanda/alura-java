@@ -1,0 +1,8 @@
+
+class Gerente extends Funcionario {
+	
+	public void cobraEntrega() {
+		System.out.println("Está pronto?");
+	}
+
+}

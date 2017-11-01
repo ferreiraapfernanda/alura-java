@@ -1,0 +1,10 @@
+
+public class Conta {
+	
+	private double saldo;
+
+	void depoista(double valor) {
+		this.saldo += valor;
+	}
+
+}
