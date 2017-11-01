@@ -1,20 +1,18 @@
 public class TestaContas {
 
 	public static void main(String[] args) {
-		Conta c = new ContaCorrente();
-		Conta cc = new ContaCorrente();
-		Conta cp = new ContaPoupanca();
-		
-        c.deposita(1000); 
-        cc.deposita(1000); 
-        cp.deposita(1000);
+		Conta joao = new ContaCorrente();
+		joao.deposita(50.0);
 
-        c.atualiza(0.01);
-        cc.atualiza(0.01);
-        cp.atualiza(0.01);
+		try {
+			joao.saca(100);
+		} catch (SaldoInsuficienteException e) {
+			System.out.println("Saldo está insuficiente: " + e.getSaldoAtual());
+		}
+		catch (Exception e) {
+			System.out.println("Um outro erro qualquer!");
+		}
 
-        System.out.println(c.getSaldo());
-        System.out.println(cc.getSaldo());
-        System.out.println(cp.getSaldo());
+		System.out.println(joao.getSaldo());
 	}
 }
