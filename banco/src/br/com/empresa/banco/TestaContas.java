@@ -1,11 +1,13 @@
 package br.com.empresa.banco;
-import br.com.caelum.Funcionario.excecao.SaldoInsuficienteException;
-import br.com.caelum.Funcionario.modelo.Conta;
-import br.com.caelum.Funcionario.modelo.ContaCorrente;
+
+import br.com.empresa.banco.conta.Conta;
+import br.com.empresa.banco.conta.ContaCorrente;
+import br.com.empresa.banco.conta.SaldoInsuficienteException;
+import br.com.empresa.banco.conta.ValorInvalidoException;
 
 public class TestaContas {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ValorInvalidoException {
 		Conta joao = new ContaCorrente();
 		joao.deposita(50.0);
 

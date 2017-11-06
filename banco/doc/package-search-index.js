@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"br.com.empresa.banco"},{"l":"br.com.empresa.banco.conta"},{"l":"br.com.empresa.banco.sistema"}]

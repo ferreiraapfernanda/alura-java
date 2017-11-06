@@ -1,4 +1,5 @@
-package br.com.caelum.Funcionario.modelo;
+package br.com.empresa.banco.conta;
+
 public class GerenciadorDeImpostoDeRenda {
 	
 	private double total;

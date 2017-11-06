@@ -1,6 +1,4 @@
 package br.com.empresa.banco.conta;
-import br.com.caelum.Funcionario.excecao.SaldoInsuficienteException;
-import br.com.caelum.Funcionario.excecao.ValorInvalidoException;
 
 public abstract class Conta {
 
@@ -19,6 +17,11 @@ public abstract class Conta {
 
 	}
 
+	/**
+	 * Realiza um saque na conta, dado o valor passado
+	 * @param valor valor a ser sacado
+	 * @throws Exception caso o saldo seja insuficiente
+	 */
 	public void saca(double valor) throws Exception {
 
 		if (saldo >= valor) {

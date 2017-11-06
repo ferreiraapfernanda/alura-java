@@ -1,12 +1,14 @@
 package br.com.empresa.banco;
-import br.com.caelum.Funcionario.modelo.AtualizadorDeContas;
-import br.com.caelum.Funcionario.modelo.Conta;
-import br.com.caelum.Funcionario.modelo.ContaCorrente;
-import br.com.caelum.Funcionario.modelo.ContaPoupanca;
+
+import br.com.empresa.banco.conta.Conta;
+import br.com.empresa.banco.conta.ContaCorrente;
+import br.com.empresa.banco.conta.ContaPoupanca;
+import br.com.empresa.banco.conta.ValorInvalidoException;
+import br.com.empresa.banco.sistema.AtualizadorDeContas;
 
 public class TestaAtualizadorDeContas {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ValorInvalidoException {
 		Conta c = new ContaCorrente();
         Conta cc = new ContaCorrente();
         Conta cp = new ContaPoupanca();

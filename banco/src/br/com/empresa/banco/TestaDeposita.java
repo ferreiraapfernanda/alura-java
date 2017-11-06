@@ -1,7 +1,8 @@
 package br.com.empresa.banco;
-import br.com.caelum.Funcionario.excecao.ValorInvalidoException;
-import br.com.caelum.Funcionario.modelo.Conta;
-import br.com.caelum.Funcionario.modelo.ContaCorrente;
+
+import br.com.empresa.banco.conta.Conta;
+import br.com.empresa.banco.conta.ContaCorrente;
+import br.com.empresa.banco.conta.ValorInvalidoException;
 
 public class TestaDeposita {
 
