@@ -3,6 +3,16 @@ package br.com.empresa.banco.conta;
 public abstract class Conta {
 
 	protected double saldo;
+	private int numero;
+	private String nome;
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 
 	public double getSaldo() {
 		return saldo;
@@ -15,6 +25,36 @@ public abstract class Conta {
 			this.saldo += valor - 0.10;
 		}
 
+	}
+	
+	@Override
+	public String toString() {
+		return "Esse objeto é uma conta com saldo R$" + saldo;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		
+		if(! (obj instanceof Conta)) {
+			return false;
+		}
+		
+		Conta outra = (Conta) obj;
+		
+		return outra.nome.equals(this.nome) && outra.numero == this.numero;
+		
+	}
+	
+	
+	
+	
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
 	}
 
 	/**

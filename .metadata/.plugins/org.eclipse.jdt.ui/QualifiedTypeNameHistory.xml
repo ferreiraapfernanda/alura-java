@@ -15,4 +15,15 @@
     <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="java.lang.OutOfMemoryError"/>
+    <fullyQualifiedTypeName name="br.com.empresa.banco.conta.SaldoInsuficienteException"/>
+    <fullyQualifiedTypeName name="br.com.empresa.banco.sistema.AtualizadorDeContas"/>
+    <fullyQualifiedTypeName name="br.com.empresa.banco.conta.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="br.com.caelum.Funcionario.modelo.SeguroDeVida"/>
+    <fullyQualifiedTypeName name="br.com.caelum.Funcionario.modelo.GerenciadorDeImpostoDeRenda"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+    <fullyQualifiedTypeName name="br.com.empresa.banco.conta.GuardadorDeObjetos"/>
+    <fullyQualifiedTypeName name="br.com.empresa.banco.conta.Conta"/>
+    <fullyQualifiedTypeName name="br.com.empresa.banco.conta.ContaCorrente"/>
+    <fullyQualifiedTypeName name="br.com.empresa.banco.sistema.TesteLetraPorLetra"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
 </qualifiedTypeNameHistroy>
