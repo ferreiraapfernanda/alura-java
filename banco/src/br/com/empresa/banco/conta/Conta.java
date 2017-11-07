@@ -1,6 +1,6 @@
 package br.com.empresa.banco.conta;
 
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta> {
 
 	protected double saldo;
 	private int numero;
@@ -26,28 +26,49 @@ public abstract class Conta {
 		}
 
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Esse objeto é uma conta com saldo R$" + saldo;
 	}
-	
+
 	@Override
-	public boolean equals(Object obj) {
-		
-		if(! (obj instanceof Conta)) {
-			return false;
+	public int compareTo(Conta outra) {
+		if (this.saldo < outra.saldo) {
+			return -1;
 		}
-		
-		Conta outra = (Conta) obj;
-		
-		return outra.nome.equals(this.nome) && outra.numero == this.numero;
-		
+		if (this.saldo > outra.saldo) {
+			return -1;
+		}
+
+		return 0;
 	}
 	
 	
-	
-	
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		long temp;
+		temp = Double.doubleToLongBits(saldo);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Conta other = (Conta) obj;
+		if (Double.doubleToLongBits(saldo) != Double.doubleToLongBits(other.saldo))
+			return false;
+		return true;
+	}
 
 	public int getNumero() {
 		return numero;
@@ -59,8 +80,11 @@ public abstract class Conta {
 
 	/**
 	 * Realiza um saque na conta, dado o valor passado
-	 * @param valor valor a ser sacado
-	 * @throws Exception caso o saldo seja insuficiente
+	 * 
+	 * @param valor
+	 *            valor a ser sacado
+	 * @throws Exception
+	 *             caso o saldo seja insuficiente
 	 */
 	public void saca(double valor) throws Exception {
 
