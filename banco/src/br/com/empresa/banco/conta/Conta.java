@@ -34,27 +34,8 @@ public abstract class Conta implements Comparable<Conta> {
 
 	@Override
 	public int compareTo(Conta outra) {
-		if (this.saldo < outra.saldo) {
-			return -1;
-		}
-		if (this.saldo > outra.saldo) {
-			return -1;
-		}
-
-		return 0;
-	}
-	
-	
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		long temp;
-		temp = Double.doubleToLongBits(saldo);
-		result = prime * result + (int) (temp ^ (temp >>> 32));
-		return result;
-	}
+        return this.getNumero() - outra.getNumero();
+    }
 
 	@Override
 	public boolean equals(Object obj) {
