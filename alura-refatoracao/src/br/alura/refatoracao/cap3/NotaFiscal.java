@@ -4,16 +4,14 @@ public class NotaFiscal {
 
 	private int id;
 	private double valorBruto;
-	private double impostos;
 
-	public NotaFiscal(int id, double valorBruto, double impostos) {
+	public NotaFiscal(int id, double valorBruto) {
 		this.id = id;
 		this.valorBruto = valorBruto;
-		this.impostos = impostos;
 	}
 
-	public NotaFiscal(double valorBruto, double impostos) {
-		this(0, valorBruto, impostos);
+	public NotaFiscal(double valorBruto) {
+		this(0, valorBruto);
 	}
 
 	public int getId() {
@@ -29,14 +27,24 @@ public class NotaFiscal {
 		this.valorBruto = valorBruto;
 	}
 	public double getImpostos() {
-		return impostos;
+		
+		double imposto = 0;
+		
+		if(valorBruto < 200) {
+			imposto = valorBruto * 0.03;
+		}
+		else if(valorBruto > 200 && valorBruto <= 1000) {
+			imposto = valorBruto * 0.06;
+		}
+		else {
+			imposto = valorBruto * 0.07;
+		}
+		
+		return imposto;
+		
 	}
-	public void setImpostos(double impostos) {
-		this.impostos = impostos;
-	}
-
 	public double getValorLiquido() {
-		return this.valorBruto - this.impostos;
+		return this.valorBruto - this.getImpostos();
 	}
 
 }
