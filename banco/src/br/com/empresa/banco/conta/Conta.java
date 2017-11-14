@@ -18,11 +18,11 @@ public abstract class Conta implements Comparable<Conta> {
 		return saldo;
 	}
 
-	public void deposita(double valor) throws ValorInvalidoException {
+	public synchronized void deposita(double valor) throws ValorInvalidoException {
 		if (valor < 0) {
 			throw new ValorInvalidoException(valor);
 		} else {
-			this.saldo += valor - 0.10;
+			this.saldo += valor;
 		}
 
 	}
@@ -34,8 +34,8 @@ public abstract class Conta implements Comparable<Conta> {
 
 	@Override
 	public int compareTo(Conta outra) {
-        return this.getNumero() - outra.getNumero();
-    }
+		return this.getNumero() - outra.getNumero();
+	}
 
 	@Override
 	public int hashCode() {
@@ -85,6 +85,5 @@ public abstract class Conta implements Comparable<Conta> {
 	}
 
 	public abstract void atualiza(double taxa);
-	
-	
+
 }
