@@ -38,6 +38,14 @@ public abstract class Conta implements Comparable<Conta> {
     }
 
 	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + numero;
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -46,7 +54,7 @@ public abstract class Conta implements Comparable<Conta> {
 		if (getClass() != obj.getClass())
 			return false;
 		Conta other = (Conta) obj;
-		if (Double.doubleToLongBits(saldo) != Double.doubleToLongBits(other.saldo))
+		if (numero != other.numero)
 			return false;
 		return true;
 	}
@@ -77,4 +85,6 @@ public abstract class Conta implements Comparable<Conta> {
 	}
 
 	public abstract void atualiza(double taxa);
+	
+	
 }
