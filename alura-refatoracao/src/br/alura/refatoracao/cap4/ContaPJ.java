@@ -1,29 +1,20 @@
 package br.alura.refatoracao.cap4;
 
-public class ContaPJ {
+public class ContaPJ extends ContaBancaria {
 
 	private String titular;
 	private double saldo;
 
 	public ContaPJ(String titular, double saldoInicial) {
-		this.titular = titular;
-		this.saldo = saldoInicial;
+		super(saldoInicial, titular);
 	}
 	
 	public void saca(double valor) {
-		saldo -= valor + 0.2;
+		super.saca(valor + 0.2);
 	}
 	
 	public void deposita(double valor) {
-		saldo += valor - 0.2;
-	}
-	
-	public double getSaldo() {
-		return saldo;
-	}
-	
-	public String getTitular() {
-		return titular;
+		super.saca(valor - 0.2);
 	}
 	
 }
