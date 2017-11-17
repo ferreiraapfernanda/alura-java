@@ -2311,3 +2311,706 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-11-17 15:58:58.968
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:30.969
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.consumption.ui.doc.user_1.0.700.v201309242123 [550]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:30.987
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jdt.doc.user_3.13.50.v20171004-1030 [409]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:30.993
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.axis2.ui.doc.user_1.0.200.v201309242118 [546]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:30.997
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.command.env.doc.user_1.5.400.v201309242123 [834]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.012
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.jsdt.doc_2.0.200.v201610220243 [881]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.015
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.dtdeditor.doc.user_1.0.700.v201208081537 [857]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.018
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.j2ee.doc.user_1.1.400.v201008122207 [483]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.028
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.platform.doc.user_4.7.1.v20170630-0820 [725]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.028
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.xmleditor.doc.user_1.0.700.v201707252002 [952]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.028
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.xsdeditor.doc.user_1.0.800.v201707252002 [955]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.045
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ejb.doc.user_1.1.301.v201105130955 [478]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.047
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.axis.ui.doc.user_1.1.200.v201309242123 [539]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.050
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.wsdl.ui.doc.user_1.0.850.v201309242123 [938]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.052
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.webtools.doc.user_1.0.500.v201208081537 [928]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.055
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.server.ui.doc.user_1.1.600.v201309182117 [915]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.063
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.pde.doc.user_3.13.1.v20171009-0537 [702]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.066
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.doc.user_1.0.700.v201612121628 [560]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.069
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.wsi.ui.doc.user_1.0.750.v201309242123 [942]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.072
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.server.ui.doc.user_1.0.600.v201309182117 [528]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 2 0 2017-11-17 16:02:31.075
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.sse.doc.user_1.1.100.v201208081537 [918]'. The index should be rebuilt with Lucene 6.1.
+
+!ENTRY org.eclipse.help.base 4 4 2017-11-17 16:02:44.006
+!MESSAGE Help documentation could not be indexed completely.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-11-17 16:02:44.006
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_core_codeFormatter.html cannot be opened.
+
+!ENTRY org.eclipse.core.resources 4 367 2017-11-17 16:05:15.290
+!MESSAGE Resource '/.org.eclipse.jdt.core.external.folders/.link0' already exists.
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-11-17 16:05:15.658
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1720)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1554)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1530)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2246)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2136)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:473)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$VMChanges.doit(LaunchingPlugin.java:289)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$JREUpdateJob.run(LaunchingPlugin.java:386)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-11-17 16:07:13.974
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1720)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1554)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1530)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2246)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2136)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:473)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$VMChanges.doit(LaunchingPlugin.java:289)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$JREUpdateJob.run(LaunchingPlugin.java:386)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-11-17 16:07:22.770
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1720)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1554)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1530)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2246)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2136)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:473)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$VMChanges.doit(LaunchingPlugin.java:289)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$JREUpdateJob.run(LaunchingPlugin.java:386)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-11-17 16:09:28.584
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1720)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1554)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1530)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2246)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2136)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:473)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:105)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:118)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2017-11-17 16:09:37.533
+!MESSAGE An error occurred while searching for implementations of 'sort'. See error log for details.
+!STACK 1
+Java Model Exception: Java Model Status [<module:java.base> is not on its project's build path]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:570)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:247)
+	at org.eclipse.jdt.internal.core.Openable.openAncestors(Openable.java:505)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:241)
+	at org.eclipse.jdt.internal.core.Openable.openAncestors(Openable.java:505)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:241)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:107)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:583)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:287)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:306)
+	at org.eclipse.jdt.internal.core.BinaryType.isInterface(BinaryType.java:725)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaElementImplementationHyperlink$1.run(JavaElementImplementationHyperlink.java:237)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2017-11-17 16:09:37.533
+!MESSAGE <module:java.base> is not on its project's build path
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-11-17 16:11:05.135
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1720)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1554)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1530)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2246)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2136)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:473)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$VMChanges.doit(LaunchingPlugin.java:289)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$JREUpdateJob.run(LaunchingPlugin.java:386)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-11-17 16:11:19.303
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1720)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1554)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1530)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2246)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2136)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:473)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$VMChanges.doit(LaunchingPlugin.java:289)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$JREUpdateJob.run(LaunchingPlugin.java:386)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.resources 4 367 2017-11-17 16:11:32.889
+!MESSAGE Resource '/.org.eclipse.jdt.core.external.folders/.link3' already exists.
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-11-17 16:11:33.094
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1720)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1554)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1530)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2246)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2136)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:473)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$VMChanges.doit(LaunchingPlugin.java:289)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$JREUpdateJob.run(LaunchingPlugin.java:386)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
