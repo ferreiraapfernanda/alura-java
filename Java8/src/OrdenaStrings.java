@@ -1,6 +1,16 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.function.Function;
 
+/**
+ * OrdenaString
+ * 
+ * Dada uma lista de strings, faz a ordenação a partir do tamanho 
+ * 
+ * @author FERNANDA
+ *
+ */
 public class OrdenaStrings {
 
 	public static void main(String[] args) {
@@ -10,20 +20,16 @@ public class OrdenaStrings {
 		palavras.add("editora casa do código");
 		palavras.add("caelum");
 
-		palavras.sort((s1, s2) -> s1.length() - s2.length());
-
-		palavras.forEach(s -> System.out.println(s));
-
-		/*new Thread(new Runnable() {
-
-			@Override
-			public void run() {
-				System.out.println("Executando um Runnable");
-
-			}
-		}).start();*/
+		// Comparação por Lambdas
+		//palavras.sort( Comparator.comparing( String::hashCode ) );
+		palavras.sort(String.CASE_INSENSITIVE_ORDER);
 		
-		new Thread(() -> System.out.println("executando um runnable")).start();;
+		// Comparação Normal
+		/*Function<String, Integer> funcao = s -> s.length();
+		Comparator<String> comparador = Comparator.comparing(funcao);
+		palavras.sort(comparador);*/
+				
+		palavras.forEach(System.out::println);
 	}
 
 }
