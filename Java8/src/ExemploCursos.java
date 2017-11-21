@@ -1,6 +1,10 @@
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 class Curso {
 
@@ -35,10 +39,10 @@ public class ExemploCursos {
 		cursos.sort( Comparator.comparingInt( Curso::getAlunos ) );
 		
 		//cursos.forEach( c -> System.out.println(c.getNome()));
+	
 		
-		cursos.stream()
-			.map(Curso::getNome);
-			
+		//cursos.forEach( c -> System.out.println(c.getNome()) );
+		
 		
 	}
 	
