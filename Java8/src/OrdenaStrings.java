@@ -10,9 +10,20 @@ public class OrdenaStrings {
 		palavras.add("editora casa do código");
 		palavras.add("caelum");
 
-		palavras.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
+		palavras.sort((s1, s2) -> s1.length() - s2.length());
 
 		palavras.forEach(s -> System.out.println(s));
+
+		/*new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				System.out.println("Executando um Runnable");
+
+			}
+		}).start();*/
+		
+		new Thread(() -> System.out.println("executando um runnable")).start();;
 	}
 
 }

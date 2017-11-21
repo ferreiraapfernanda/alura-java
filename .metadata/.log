@@ -3438,3 +3438,106 @@ Java Model Exception: Java Model Status [<module:java.base> is not on its projec
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
 !SUBENTRY 3 org.eclipse.jdt.core 4 1006 2017-11-17 16:40:47.819
 !MESSAGE <module:java.base> is not on its project's build path
+!SESSION 2017-11-21 15:51:21.924 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=9.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-11-21 15:52:18.807
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\FERNANDA'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-21 15:59:12.240
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-21 15:59:12.240
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 11 2017-11-21 15:59:13.825
+!MESSAGE The model index service was accessed either before it started or after it finished running.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:126)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelIndex.suggest(EclipseModelIndex.java:211)
+	at org.eclipse.recommenders.models.SimpleModelProvider.acquireModel(SimpleModelProvider.java:70)
+	at org.eclipse.recommenders.models.PoolingModelProvider.access$0(PoolingModelProvider.java:1)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:96)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:1)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1220)
+	at org.eclipse.recommenders.models.PoolingModelProvider.acquireModel(PoolingModelProvider.java:67)
+	at org.eclipse.recommenders.internal.constructors.rcp.EclipseConstructorModelProvider.acquireModel(EclipseConstructorModelProvider.java:65)
+	at org.eclipse.recommenders.internal.constructors.rcp.EclipseConstructorModelProvider.acquireModel(EclipseConstructorModelProvider.java:1)
+	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-11-21 15:59:14.170
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jre-9.0.1\lib\jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-21 15:59:25.792
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-21 15:59:25.793
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
