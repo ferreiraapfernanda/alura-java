@@ -19,4 +19,5 @@ public class TesteReferencias {
 		System.out.println(conta1);
 		System.out.println(conta2);
 	}
+	
 }
