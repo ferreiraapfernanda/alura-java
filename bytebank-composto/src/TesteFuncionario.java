@@ -3,7 +3,7 @@ public class TesteFuncionario {
 
 	public static void main(String[] args) {
 		
-		Funcionario nico = new Funcionario();
+		Funcionario nico = new Gerente();
 		
 		nico.setNome("Nico Seppat");
 		nico.setCpf("22222");
@@ -12,11 +12,10 @@ public class TesteFuncionario {
 		System.out.println(nico.getNome());
 		System.out.println(nico.getBonificacao());
 		
-		Funcionario f1 = new Funcionario();
+		Funcionario f1 = new EditorVideo();
 		
 		f1.setNome("Funcionario um");
 		f1.setSalario(3000.0);
-		f1.setTipo(2);
 		
 		System.out.println(f1.getNome());
 		System.out.println(f1.getBonificacao());
