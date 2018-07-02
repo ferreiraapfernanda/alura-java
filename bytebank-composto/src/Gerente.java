@@ -1,11 +1,11 @@
 
-public class Gerente extends Funcionario{
+public class Gerente extends Funcionario {
 
 	private int senha;
 
-	/*public double getBonificacao() {
-		return this.salario;
-	}*/
+	public double getBonificacao() {
+		return super.getBonificacao() + super.getSalario();
+	}
 
 	public boolean autentica(int senha) {
 		if (this.senha == senha) {
@@ -14,7 +14,7 @@ public class Gerente extends Funcionario{
 
 		return false;
 	}
-	
+
 	public void setSenha(int senha) {
 		this.senha = senha;
 	}

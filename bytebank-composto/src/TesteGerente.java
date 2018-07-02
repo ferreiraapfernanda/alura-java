@@ -8,9 +8,10 @@ public class TesteGerente {
 		gerente.setCpf("45688");
 		gerente.setSalario(5000.0);
 
-		System.out.println(gerente.getNome());
-		System.out.println(gerente.getCpf());
-		System.out.println(gerente.getSalario());
+		System.out.println("Nome: "+gerente.getNome());
+		System.out.println("CPF: "+ gerente.getCpf());
+		System.out.println("Salário: " + gerente.getSalario());
+		System.out.println("Bonificação " + gerente.getBonificacao());
 		
 		gerente.setSenha(2222);
 
