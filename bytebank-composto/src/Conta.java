@@ -52,18 +52,19 @@ public abstract class Conta {
 	/**
 	 * Método saca
 	 * 
-	 * Retira um valor do saldo da conta
+	 * Retira um valor do saldo
 	 * 
-	 * @param valor a ser retirado
-	 * @return status da realização do saque
+	 * @param valor
+	 * @throws SacaException
 	 */
-	public boolean saca(double valor) {
-		if (this.saldo >= valor) {
-			this.saldo -= valor;
-			return true;
+	public void saca(double valor) throws SacaException{
+
+		if (this.saldo < valor) {
+			throw new SacaException("Saldo: " + this.saldo + ", Valor: " + valor);
 		}
 
-		return false;
+		this.saldo -= valor;
+
 	}
 
 	/**
@@ -71,24 +72,18 @@ public abstract class Conta {
 	 * 
 	 * Faz a transferência de um valor do saldo para outra conta
 	 * 
-	 * @param valor a ser transferido
+	 * @param valor   a ser transferido
 	 * @param destino conta destino
 	 * @return status da transferência
 	 */
-	public boolean transfere(double valor, Conta destino) {
-
-		if (this.saldo >= valor) {
-			this.saca(valor);
-			destino.deposita(valor);
-			return true;
-		}
-
-		return false;
-
+	public void transfere(double valor, Conta destino) throws SacaException{
+		this.saca(valor);
+		destino.deposita(valor);
 	}
 
 	/**
 	 * Método getSaldo
+	 * 
 	 * @return saldo
 	 */
 	public double getSaldo() {
@@ -97,6 +92,7 @@ public abstract class Conta {
 
 	/**
 	 * Método getNumero()
+	 * 
 	 * @return numero
 	 */
 	public int getNumero() {
@@ -105,6 +101,7 @@ public abstract class Conta {
 
 	/**
 	 * Método setNumero()
+	 * 
 	 * @param numero
 	 */
 	public void setNumero(int numero) {
@@ -117,6 +114,7 @@ public abstract class Conta {
 
 	/**
 	 * Método getAgencia()
+	 * 
 	 * @return
 	 */
 	public int getAgencia() {
@@ -125,6 +123,7 @@ public abstract class Conta {
 
 	/**
 	 * Método setAgencia()
+	 * 
 	 * @param agencia
 	 */
 	public void setAgencia(int agencia) {
@@ -137,6 +136,7 @@ public abstract class Conta {
 
 	/**
 	 * Método setTitular
+	 * 
 	 * @param titular
 	 */
 	public void setTitular(Cliente titular) {
@@ -145,6 +145,7 @@ public abstract class Conta {
 
 	/**
 	 * Método getTitular
+	 * 
 	 * @return
 	 */
 	public Cliente getTitular() {
@@ -153,6 +154,7 @@ public abstract class Conta {
 
 	/**
 	 * Método getTotal
+	 * 
 	 * @return
 	 */
 	public static int getTotal() {
