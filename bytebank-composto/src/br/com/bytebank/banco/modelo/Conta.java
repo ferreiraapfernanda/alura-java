@@ -8,7 +8,7 @@ package br.com.bytebank.banco.modelo;
  * @author fernanda
  *
  */
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta> {
 
 	protected double saldo;
 	private int agencia;
@@ -44,7 +44,7 @@ public abstract class Conta {
 	 * @param valor
 	 * @throws SacaException
 	 */
-	public void saca(double valor) throws SacaException{
+	public void saca(double valor) throws SacaException {
 
 		if (this.saldo < valor) {
 			throw new SacaException("Saldo: " + this.saldo + ", Valor: " + valor);
@@ -63,7 +63,7 @@ public abstract class Conta {
 	 * @param destino conta destino
 	 * @return status da transferência
 	 */
-	public void transfere(double valor, Conta destino) throws SacaException{
+	public void transfere(double valor, Conta destino) throws SacaException {
 		this.saca(valor);
 		destino.deposita(valor);
 	}
@@ -147,7 +147,7 @@ public abstract class Conta {
 	public static int getTotal() {
 		return Conta.total;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "número: " + this.numero + " da agência: " + this.agencia;
@@ -155,17 +155,22 @@ public abstract class Conta {
 
 	@Override
 	public boolean equals(Object ref) {
-		
-		Conta conta = (Conta) ref; 
-		
-		if(this.agencia != conta.agencia) {
+
+		Conta conta = (Conta) ref;
+
+		if (this.agencia != conta.agencia) {
 			return false;
 		}
-		
-		if(this.numero != conta.numero) {
+
+		if (this.numero != conta.numero) {
 			return false;
 		}
-		
+
 		return true;
+	}
+
+	@Override
+	public int compareTo(Conta outra) {
+		return Double.compare(this.saldo, outra.saldo);
 	}
 }

@@ -21,7 +21,7 @@ public class TesteOutrosWrapper {
 		List<Number> lista = new ArrayList<>();
 		lista.add(1);
 		lista.add(29.5f);
-		listta.add(30.5);
+		lista.add(30.5);
 		
 		
 	}
