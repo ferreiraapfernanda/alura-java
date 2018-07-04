@@ -11,6 +11,8 @@ public class TesteArrayReferencias {
 		
 		Object[] contas = new Object[5];
 		
+		System.out.println(contas.length);
+		
 		ContaCorrente cc1 = new ContaCorrente(22, 11);
 		contas[0] = cc1;
 				
