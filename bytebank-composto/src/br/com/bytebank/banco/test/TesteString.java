@@ -27,5 +27,7 @@ public class TesteString {
 			System.out.println(nome.charAt(i));
 			
 		}
+		
+		System.out.println(System.out.getClass());
 	}
 }
