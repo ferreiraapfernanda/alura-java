@@ -15,7 +15,7 @@ public class TesteContas {
 		ContaPoupanca cp = new ContaPoupanca(222, 222);
 		cp.deposita(200.0);
 
-		cc.transfere(100.0, cp);
+		cc.transfere(90.0, cp);
 
 		System.out.println("CC: " + cc.getSaldo());
 		System.out.println("CP: " + cp.getSaldo());

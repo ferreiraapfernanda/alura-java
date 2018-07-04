@@ -10,29 +10,14 @@ package br.com.bytebank.banco.modelo;
  */
 public abstract class Conta {
 
-	/**
-	 * Valo do aldo da conta
-	 */
 	protected double saldo;
-	/**
-	 * Número da agência da conta
-	 */
 	private int agencia;
-	/**
-	 * Número da conta
-	 */
 	private int numero;
-	/**
-	 * Cliente da conta
-	 */
 	private Cliente titular;
-	/**
-	 * Total de ocorrências dessa classe
-	 */
 	private static int total; // é o mesma referência para objetos diferentes
 
 	/**
-	 * Método Contrutor Conta
+	 * Construtor para inicializar o objeto Conta a partir de agência e número
 	 * 
 	 * @param agencia
 	 * @param numero
@@ -54,7 +39,7 @@ public abstract class Conta {
 	/**
 	 * Método saca
 	 * 
-	 * Retira um valor do saldo
+	 * Retira um valor do saldo. Valor precisa ser maior do que o saldo
 	 * 
 	 * @param valor
 	 * @throws SacaException
