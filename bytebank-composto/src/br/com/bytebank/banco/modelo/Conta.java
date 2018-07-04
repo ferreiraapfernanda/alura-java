@@ -153,4 +153,19 @@ public abstract class Conta {
 		return "número: " + this.numero + " da agência: " + this.agencia;
 	}
 
+	@Override
+	public boolean equals(Object ref) {
+		
+		Conta conta = (Conta) ref; 
+		
+		if(this.agencia != conta.agencia) {
+			return false;
+		}
+		
+		if(this.numero != conta.numero) {
+			return false;
+		}
+		
+		return true;
+	}
 }
