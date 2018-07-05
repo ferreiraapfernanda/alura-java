@@ -13,13 +13,13 @@
 - :ok: Java parte 6
 - :ok: (Post) Diferença entre int e Integer em Java
 - :ok: (Post) Arredondando números no Java
-- Java parte 7
-- (Post) Design Patterns no Java SE: o Template Method
-- (Post) Internacionalização no código Java
-- (Post) Conheça a nova API de datas do Java 8
-- (Video) Conheça as novidades do Java 9
-- (Post) O mínimo que você deve saber de Java 10
-- (Post) Receba notificações da api de Servlet via Listeners
+- :ok: Java parte 7
+- :ok: (Post) Design Patterns no Java SE: o Template Method
+- :ok: (Post) Internacionalização no código Java
+- :ok: (Post) Conheça a nova API de datas do Java 8
+- :ok: (Video) Conheça as novidades do Java 9
+- :ok: (Post) O mínimo que você deve saber de Java 10
+- :ok: (Post) Receba notificações da api de Servlet via Listeners
 - Servlets
 - Maven
 - 
