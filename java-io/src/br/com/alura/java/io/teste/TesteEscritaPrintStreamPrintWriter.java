@@ -15,7 +15,7 @@ public class TesteEscritaPrintStreamPrintWriter {
 
 		ps.close();
 		
-		PrintWriter pw = new PrintWriter("lorem3.txt");
+		PrintWriter pw = new PrintWriter("lorem3.txt", "UTF-8");
 		pw.write("Novo teste com print writer");
 		pw.write(System.lineSeparator());
 		pw.write("fim do teste");

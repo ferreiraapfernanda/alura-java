@@ -1,6 +1,7 @@
 package br.com.alura.java.io.teste;
 
 import java.io.File;
+import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -8,7 +9,7 @@ public class TesteLeitura2 {
 
 	public static void main(String[] args) throws Exception {
 
-		Scanner scanner = new Scanner(new File("contas.csv"));
+		Scanner scanner = new Scanner(new File("contas.csv"), StandardCharsets.UTF_8.name());
 
 		while (scanner.hasNextLine()) {
 			String linha = scanner.nextLine();
@@ -26,7 +27,7 @@ public class TesteLeitura2 {
 
 			String valorFormatado = String.format(new Locale("pt", "BR"), "%s - %04d-%08d, %20s: %08.2f %n", tipoConta, agencia, numero, titular, saldo);
 			
-			System.out.println(valorFormatado);
+			System.out.print(valorFormatado);
 
 //			String[] valores = linha.split(",");
 //			System.out.println(Arrays.toString(valores));

@@ -13,7 +13,7 @@ public class TesteLeitura {
 
 		// Fluxo de Entrada com arquivo
 		InputStream fis = new FileInputStream("lorem.txt"); // Só lê em bytes
-		Reader isr = new InputStreamReader(fis); // Transforma os bytes em caracteres
+		Reader isr = new InputStreamReader(fis, "UTF-8"); // Transforma os bytes em caracteres
 		BufferedReader br = new BufferedReader(isr); // Para ler uma linha inteira, não caracteres isolados
 
 		String linha = br.readLine();
