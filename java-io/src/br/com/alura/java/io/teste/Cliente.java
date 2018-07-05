@@ -1,4 +1,4 @@
-package br.com.bytebank.banco.modelo;
+package br.com.alura.java.io.teste;
 
 import java.io.Serializable;
 
@@ -9,16 +9,23 @@ import java.io.Serializable;
  * @version 1.0
  *
  */
-public class Cliente implements Autenticavel {
+public class Cliente implements Serializable{
 
+	/**
+	 * Colocar uma versão. O ideal é que mude somente se alterar algo muito importante, que pode ser incompatível
+	 */
+	private static final long serialVersionUID = 4L;
+	
 	private String nome;
 	private String cpf;
 	private String profissao;
 
-	private AutenticacaoUtil autenticador;
-
 	public Cliente() {
-		this.autenticador = new AutenticacaoUtil();
+
+	}
+	
+	public String getNomeCpf() {
+		return this.nome + ", " + this.cpf;
 	}
 
 	public String getNome() {
@@ -44,15 +51,4 @@ public class Cliente implements Autenticavel {
 	public void setProfissao(String profissao) {
 		this.profissao = profissao;
 	}
-
-	@Override
-	public void setSenha(int senha) {
-		this.autenticador.setSenha(senha);
-	}
-
-	@Override
-	public boolean autentica(int senha) {
-		return this.autenticador.autentica(senha);
-	}
-
 }
