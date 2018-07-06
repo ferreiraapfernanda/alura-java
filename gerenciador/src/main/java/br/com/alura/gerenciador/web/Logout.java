@@ -15,7 +15,7 @@ public class Logout extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		req.getSession().setMaxInactiveInterval(10*60);
-		req.getSession().removeAttribute("usuario.logado");
+		req.getSession().removeAttribute("usuarioLogado");
 		//req.getSession().invalidate();
 		RequestDispatcher dispatcher =  req.getRequestDispatcher("/WEB-INF/paginas/logout.html");
 		dispatcher.forward(req, resp);

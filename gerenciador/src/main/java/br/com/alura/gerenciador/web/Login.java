@@ -32,7 +32,7 @@ public class Login extends HttpServlet {
 		} else {
 
 			HttpSession session = req.getSession();
-			session.setAttribute("usuario.logado", usuario);
+			session.setAttribute("usuarioLogado", usuario);
 
 			writer.println("<html><body>Usuário logado: " + usuario.getEmail() + " </body></html>");
 		}
