@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = "/fazTudo")
-public class FazTudo extends HttpServlet { // Servlet padrão para gerenciar as páginas
+@WebServlet(urlPatterns = "/executa")
+public class Controller extends HttpServlet { // Servlet padrão para gerenciar as páginas
 
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

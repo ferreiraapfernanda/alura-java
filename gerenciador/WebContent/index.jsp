@@ -21,7 +21,7 @@
 			value="Logar">
 	</form>
 	
-	<form action="fazTudo" method="post">
+	<form action="executa" method="post">
 		<input type="hidden" name="tarefa" value="Logout">
 		<input type="submit" value="Deslogar">
 	</form>
