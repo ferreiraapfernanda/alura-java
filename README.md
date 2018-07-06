@@ -35,6 +35,21 @@
 - (Post) Agendando tarefas com Scheduled do Spring
 - (Video) Alura Live #61 - Programação reativa com Spring 5
 
-## Outros curss Java
+## Outros cursos Java
 
-- 
+- Java e JSTL
+- Java e JDBC
+- EJB
+- Java e JSF I
+- Java e JSF 2 - II
+- Java e JSF 2 - III
+- Java EE parte 1
+- Java EE parte 2
+- Java EE parte 3
+- Spring Boot
+
+## Outras carreiras para decidir
+
+- Carreira Expert em Integrações de Aplicações com Java 
+- Carreira Avançando na Plataforma Java 
+- Carreira Expert em Orientação a Objetos com Java 
