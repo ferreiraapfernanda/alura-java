@@ -20,6 +20,6 @@
 - :ok: (Video) Conheça as novidades do Java 9
 - :ok: (Post) O mínimo que você deve saber de Java 10
 - :ok: (Post) Receba notificações da api de Servlet via Listeners
-- Servlets
+- :ok: Servlets
 - Maven
 - 
