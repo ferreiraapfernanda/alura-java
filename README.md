@@ -22,4 +22,19 @@
 - :ok: (Post) Receba notificações da api de Servlet via Listeners
 - :ok: Servlets
 - Maven
+- Java e JPA
+- (Post) Entidades Managed, Transient e Detached no Hibernate e JPA
+- (Post) JPA com Hibernate: Herança e Mapeamentos
+- Java e JPA: Otimizações com JPA2 e Hibernate
+- (Post) Entendendo o Lazy e o Eager Load da JPA
+- (Post) Os 7 hábitos dos desenvolvedores Hibernate e JPA altamente eficazes
+- (Podcast) Spring Framework – Hipsters #87
+- Spring MVC I
+- (Post) Erros com JAXB no Java 9+
+- Spring MVC II
+- (Post) Agendando tarefas com Scheduled do Spring
+- (Video) Alura Live #61 - Programação reativa com Spring 5
+
+## Outros curss Java
+
 - 
