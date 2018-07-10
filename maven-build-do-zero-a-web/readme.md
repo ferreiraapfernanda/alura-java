@@ -30,3 +30,16 @@
 
 > Empacota o projeto
 > ``java -cp produtos-1.0-SNAPSHOT.jar br.com.alura.maven.App``
+
+## Ciclo do Build do Maven <https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html>
+
+- validate
+- compile
+- test
+- package
+- integration-test
+- verify
+- install
+- deploy
+
+Sempre faz as fases anteriores.
