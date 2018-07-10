@@ -5,7 +5,7 @@
 	<br />
 	
 	<c:if test="${not empty usuarioLogado}">
-		Logado como ${usuarioLogado.email} </br>
+		Logado como ${usuarioLogado.email} <br>
 	</c:if>
 	
 	<h1>Cadastrar Empresa</h1>
