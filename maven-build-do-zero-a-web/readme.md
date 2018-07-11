@@ -67,6 +67,10 @@ Plugin que gera um relatório que analise o código para encontrar falhas, como 
 
 ``mvn jacoco report``
 
+## Jetty
+
+``mvn jetty:run``
+
 ## Eclipse
 
 No eclipse, é possível indicar os goals que deseja executar, é só ir em "Run As" > "Maven build...". Indique um nome para esse configuração e quais goals deseja executar.
