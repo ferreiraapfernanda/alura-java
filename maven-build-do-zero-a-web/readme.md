@@ -76,3 +76,9 @@ Plugin que gera um relatório que analise o código para encontrar falhas, como 
 No eclipse, é possível indicar os goals que deseja executar, é só ir em "Run As" > "Maven build...". Indique um nome para esse configuração e quais goals deseja executar.
 
 - O projeto estava com erro no index.jsp. Esse ero era da falta da dependencia do HttpServlet no pom.xml. Ao adicionarmos a dependência que queremos, precisamos também atualizar o web.xml, pois ele descreve uma outra versão dessa Servlet.
+
+- **Para usar um projeto como dependência de outro, precisamos primeiro fazer um mvn install no projeto dependência. E só então referenciar esse pacote no pom.xml**
+
+- **Não devemos colocar a Servlet API na nossa lib, ou seja, como uma dependência normal, mas sim como uma dependência provided**, ou seja, ele irá pegar da raiz do nosso JVM. Com isso, é interessante dar um ``mvn clean`` antes do ``mvn package``
+
+- O escopo **runtime** não é utilizado para compilação, somente para a execução do projeto
