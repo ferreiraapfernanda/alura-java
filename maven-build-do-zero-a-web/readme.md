@@ -74,3 +74,5 @@ Plugin que gera um relatório que analise o código para encontrar falhas, como 
 ## Eclipse
 
 No eclipse, é possível indicar os goals que deseja executar, é só ir em "Run As" > "Maven build...". Indique um nome para esse configuração e quais goals deseja executar.
+
+- O projeto estava com erro no index.jsp. Esse ero era da falta da dependencia do HttpServlet no pom.xml. Ao adicionarmos a dependência que queremos, precisamos também atualizar o web.xml, pois ele descreve uma outra versão dessa Servlet.
