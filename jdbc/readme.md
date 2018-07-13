@@ -11,3 +11,6 @@ Em outro console, iremos chamar o gerenciador, para executarmos nossa query de c
 
 ``java -cp hsqldb.jar  org.hsqldb.util.DatabaseManager``
 
+## Aula 05 
+
+- **ConnectionPool!** :heart:

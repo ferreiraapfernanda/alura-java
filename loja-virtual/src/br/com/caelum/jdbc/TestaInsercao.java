@@ -10,7 +10,7 @@ public class TestaInsercao {
 
 	public static void main(String[] args) throws SQLException {
 
-		try (Connection connection = Database.getConnection()) {
+		try (Connection connection = new ConnectionPool().getConnection()) {
 			connection.setAutoCommit(false); // Só faz a inserção quando chamar o commit
 
 			try {
