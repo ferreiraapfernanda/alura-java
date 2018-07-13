@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 import br.com.caelum.jdbc.dao.ProdutosDAO;
-import br.com.caelum.modelo.Produto;
+import br.com.caelum.jdbc.modelo.Produto;
 
 public class TestaDAODeProduto {
 
