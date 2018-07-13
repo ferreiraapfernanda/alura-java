@@ -21,7 +21,7 @@
 - :ok: (Post) O mínimo que você deve saber de Java 10
 - :ok: (Post) Receba notificações da api de Servlet via Listeners
 - :ok: Servlets
-- Maven
+- :ok: Maven
 - Java e JPA
 - (Post) Entidades Managed, Transient e Detached no Hibernate e JPA
 - (Post) JPA com Hibernate: Herança e Mapeamentos
@@ -37,8 +37,8 @@
 
 ## Outros cursos Java
 
-- Java e JSTL
 - Java e JDBC
+- Java e JSTL
 - EJB
 - Java e JSF I
 - Java e JSF 2 - II
