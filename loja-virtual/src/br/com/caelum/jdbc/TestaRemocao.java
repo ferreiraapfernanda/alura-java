@@ -12,10 +12,9 @@ public class TestaRemocao {
 		stmt.execute("DELETE FROM Produto WHERE id > 3");
 		int count = stmt.getUpdateCount();
 		System.out.println("Linhas atualizadas " + count);
-		
+
 		stmt.close();
 		connection.close();
-		
-		
+
 	}
 }
