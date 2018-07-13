@@ -29,7 +29,7 @@
 			<!-- Linguagem de comunicação com o banco -->
 			<property name="hibernate.dialect"
 				value="org.hibernate.dialect.MySQL5InnoDBDialect" />
-			<!-- Permite que crie tabela das entidades caso elas não existam -->
+			<!-- Permite que crie tabela das entidades caso elas não existam. Podemos usar o valor create para ser um banco limpo -->
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
