@@ -16,3 +16,19 @@
 - Estado Detached -> após o fechamento do entitymanager, o objeto não é mais sincronizado com o banco
 
 - Estado Removed -> de managed para removed
+
+## Blog Caelum: Entidades Managed, Transient e Detached no Hibernate e JPA
+
+<http://blog.caelum.com.br/entidades-managed-transient-e-detached-no-hibernate-e-jpa/>
+
+- Transient: objeto não tem representação no banco de dados e nem o EntityManager o conhece
+
+- Managed: objeto existe no banco de dados e o EntityManager em questão possui uma referência para ele (após o persist, ou com o método find do entitymanager). Qualquer mudança resultará em uma atualização no banco no momento do commit
+
+- Detached: objeto possivelmente está no banco de dados, mas o EntityManager o desconhece (Quando pegamos esse objeto com find mas já fechamos o entitymanager, ele se torna detached, pois suas alterações não serão mais gerenciadas).
+
+- Removed: quando a entidade está marcada para remoção
+
+Para fazer alterar o estado de **detached** para **managed** podemos fazer um **merge**.
+Para alterar o estado de **transient** para **managed** podemos fazer um **persist**
+Para alterar o estado de **managed** para **detached** podemos fechar entitymanager.

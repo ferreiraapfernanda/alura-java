@@ -23,8 +23,8 @@
 - :ok: Servlets
 - :ok: Maven
 - :ok: Java e JPA
-- (Post) Entidades Managed, Transient e Detached no Hibernate e JPA
-- (Post) JPA com Hibernate: Herança e Mapeamentos
+- :ok: (Post) Entidades Managed, Transient e Detached no Hibernate e JPA
+- :ok: (Post) JPA com Hibernate: Herança e Mapeamentos
 - Java e JPA: Otimizações com JPA2 e Hibernate
 - (Post) Entendendo o Lazy e o Eager Load da JPA
 - (Post) Os 7 hábitos dos desenvolvedores Hibernate e JPA altamente eficazes
