@@ -22,7 +22,7 @@
 - :ok: (Post) Receba notificações da api de Servlet via Listeners
 - :ok: Servlets
 - :ok: Maven
-- Java e JPA
+- :ok: Java e JPA
 - (Post) Entidades Managed, Transient e Detached no Hibernate e JPA
 - (Post) JPA com Hibernate: Herança e Mapeamentos
 - Java e JPA: Otimizações com JPA2 e Hibernate
@@ -37,7 +37,7 @@
 
 ## Outros cursos Java
 
-- Java e JDBC
+- :ok: Java e JDBC
 - Java e JSTL
 - EJB
 - Java e JSF I
