@@ -1,2 +1,6 @@
 /.metadata/
 /.recommenders/
+/forge/addons/
+/forge/docs/
+/forge/lib/
+/forge/*.txt
