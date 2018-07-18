@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,6 +21,15 @@
 		<div>
 			<label>Páginas</label> <input type="text" name="paginas">
 		</div>
+
+		<c:forEach items="" var="tipoPreco">
+		<div>
+			<label></label> <input type="text" name="">
+		</div>
+			
+		</c:forEach>
+
+
 		<button type="submit">Cadastrar</button>
 	</form>
 
