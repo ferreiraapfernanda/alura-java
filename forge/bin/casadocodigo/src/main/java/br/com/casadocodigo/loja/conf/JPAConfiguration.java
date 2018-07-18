@@ -26,8 +26,8 @@ public class JPAConfiguration {
 
 		// Datasource, que define algumas configurações do banco de dados
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
-		dataSource.setUsername("root");
-		dataSource.setPassword("");
+		dataSource.setUsername("username");
+		dataSource.setPassword("password");
 		dataSource.setUrl("jdbc:mysql://localhost/casadocodigo");
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 
