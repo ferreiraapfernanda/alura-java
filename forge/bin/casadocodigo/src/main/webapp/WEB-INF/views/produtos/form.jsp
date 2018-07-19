@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,11 +22,13 @@
 			<label>Páginas</label> <input type="text" name="paginas">
 		</div>
 
-		<c:forEach items="" var="tipoPreco">
-		<div>
-			<label></label> <input type="text" name="">
-		</div>
-			
+		<c:forEach items="${tipos}" var="tipoPreco" varStatus="status">
+			<div>
+				<label>${tipoPreco}</label> 
+				<input type="text" name="precos[${status.index}].valor"> 
+				<input type="hidden" name="precos[${status.index}].tipo" value="${tipoPreco}">
+			</div>
+
 		</c:forEach>
 
 
