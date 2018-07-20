@@ -13,7 +13,7 @@
 <body>
 
 	<form:form action="${s:mvcUrl('PC#gravar').build()}" method="post"
-		commandName="produto">
+		commandName="produto" enctype="multipart/form-data">
 
 		<div>
 			<label>Título</label>
@@ -44,6 +44,10 @@
 			</div>
 
 		</c:forEach>
+
+		<div>
+			<label>Sumário</label> <input name="sumario" type="file" />
+		</div>
 
 
 		<button type="submit">Cadastrar</button>
