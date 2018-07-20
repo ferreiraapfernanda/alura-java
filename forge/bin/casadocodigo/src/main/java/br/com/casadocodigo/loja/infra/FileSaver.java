@@ -21,7 +21,7 @@ public class FileSaver {
 			String pathname = realPath + "/" + file.getOriginalFilename();
 			file.transferTo(new File(pathname));
 			
-			return pathname;			
+			return baseFolder + "/" + file.getOriginalFilename();			
 		} catch (IllegalStateException | IOException e) {
 			throw new RuntimeException(e);
 		}
