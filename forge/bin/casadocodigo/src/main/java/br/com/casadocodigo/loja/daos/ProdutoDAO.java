@@ -25,4 +25,8 @@ public class ProdutoDAO {
 		return manager.createQuery("select p from Produto p", Produto.class).getResultList();
 	}
 
+	public Produto find(int id) {
+		return manager.createQuery("select distinct p from Produto p", Produto.class);
+	}
+
 }

@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.validation.Valid;
 
+import org.dom4j.rule.Mode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -67,6 +68,16 @@ public class ProdutosController {
 
 		ModelAndView modelAndView = new ModelAndView("produtos/lista");
 		modelAndView.addObject("produtos", produtos);
+		return modelAndView;
+	}
+	
+	@RequestMapping("/detalhe")
+	public ModelAndView detalhe(Integer id) {
+		ModelAndView modelAndView = new ModelAndView("produtos/detalhe");
+		
+		Produto produto = produtoDAO.find(id);
+		modelAndView.addObject("produto", produto);
+		
 		return modelAndView;
 	}
 
