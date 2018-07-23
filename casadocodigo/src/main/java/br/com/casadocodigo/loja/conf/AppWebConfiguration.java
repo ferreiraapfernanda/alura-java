@@ -16,52 +16,50 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import br.com.casadocodigo.loja.controllers.HomeController;
-import br.com.casadocodigo.loja.daos.ProdutoDAO;
+import br.com.casadocodigo.loja.dao.ProdutoDAO;
 import br.com.casadocodigo.loja.infra.FileSaver;
-import br.com.casadocodigo.loja.models.CarrinhoCompras;
 
 @EnableWebMvc
-@ComponentScan(basePackageClasses = { HomeController.class, ProdutoDAO.class, FileSaver.class, CarrinhoCompras.class })
+@ComponentScan(basePackageClasses= {HomeController.class, ProdutoDAO.class, FileSaver.class})
 public class AppWebConfiguration extends WebMvcConfigurerAdapter {
-
+	
 	@Bean
 	public InternalResourceViewResolver internalResourceViewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
 		resolver.setPrefix("/WEB-INF/views/");
-		resolver.setSuffix(".jsp");
-		
-		resolver.setExposedContextBeanNames("carrinhoCompras");
+		resolver.setSuffix( ".jsp");
 		return resolver;
 	}
 
 	@Bean
-	public MessageSource messageSource() {
+	public MessageSource messageSource(){
 		ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-		messageSource.setBasename("/WEB-INF/message");
+		messageSource.setBasename("/WEB-INF/messages");
 		messageSource.setDefaultEncoding("UTF-8");
 		messageSource.setCacheSeconds(1);
-
 		return messageSource;
 	}
-
+	
 	@Bean
 	public FormattingConversionService mvcConversionService() {
-		DefaultFormattingConversionService conversionService = new DefaultFormattingConversionService();
+		DefaultFormattingConversionService conversionService = 
+				new DefaultFormattingConversionService();
 		DateFormatterRegistrar registrar = new DateFormatterRegistrar();
 		registrar.setFormatter(new DateFormatter("dd/MM/yyyy"));
 		registrar.registerFormatters(conversionService);
-
+		
 		return conversionService;
 	}
 	
-	@Bean
-	public MultipartResolver multipartResolver() {
+    @Bean
+	public MultipartResolver multipartResolver(){
 		return new StandardServletMultipartResolver();
 	}
-	
-	@Override
+    
+    @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
     }
 	
 }
+	
