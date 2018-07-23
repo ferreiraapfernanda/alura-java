@@ -40,4 +40,6 @@ public class CarrinhoComprasController {
 		CarrinhoItem carrinhoItem = new CarrinhoItem(produto, tipoPreco);
 		return carrinhoItem;
 	}
+	
+	
 }
