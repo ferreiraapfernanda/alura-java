@@ -1,5 +1,6 @@
 package br.com.caelum;
 
+import java.beans.PropertyVetoException;
 import java.util.Properties;
 
 import javax.persistence.EntityManagerFactory;
@@ -7,26 +8,34 @@ import javax.sql.DataSource;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 @Configuration
 @EnableTransactionManagement
 public class JpaConfigurator {
 
 	@Bean
-	public DataSource getDataSource() {
-	    DriverManagerDataSource dataSource = new DriverManagerDataSource();
+	public DataSource getDataSource() throws PropertyVetoException {
 
-	    dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-	    dataSource.setUrl("jdbc:mysql://localhost/projeto_jpa");
-	    dataSource.setUsername("username");
-	    dataSource.setPassword("password");
+		ComboPooledDataSource dataSource = new ComboPooledDataSource();
+		dataSource.setDriverClass("com.mysql.jdbc.Driver");
+		dataSource.setUser("username");
+		dataSource.setPassword("password");
+		dataSource.setJdbcUrl("jdbc:mysql://localhost/projeto_jpa");
 
-	    return dataSource;
+		dataSource.setMinPoolSize(3);
+		dataSource.setNumHelperThreads(15);
+
+		dataSource.setMaxPoolSize(5);
+
+		dataSource.setIdleConnectionTestPeriod(1); // a cada um segundo testamos as conexões ociosas
+
+		return dataSource;
 	}
 
 	@Bean
@@ -36,8 +45,7 @@ public class JpaConfigurator {
 		entityManagerFactory.setPackagesToScan("br.com.caelum");
 		entityManagerFactory.setDataSource(dataSource);
 
-		entityManagerFactory
-				.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
+		entityManagerFactory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 
 		Properties props = new Properties();
 
