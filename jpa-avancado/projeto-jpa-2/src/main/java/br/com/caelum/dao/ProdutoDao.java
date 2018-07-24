@@ -59,6 +59,7 @@ public class ProdutoDao {
 		query.where((Predicate[]) predicates.toArray(new Predicate[0]));
 
 		TypedQuery<Produto> typedQuery = em.createQuery(query);
+		typedQuery.setHint("org.hibernate.cacheable", "true");
 		return typedQuery.getResultList();
 
 	}
