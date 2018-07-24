@@ -1,43 +1,64 @@
+
 # Formação Desenvolvedor Java
 
-- :ok: Java Dominando as Collections
-- :ok: Java parte 1
-- :ok: Java parte 2
-- :ok: Java parte 3
-- :ok: Java parte 4
-- :ok: (Post) Como não aprender Java e Orientação a Objetos: getters e setters
-- :ok: (Post) Revisitando a Orientação a Objetos: encapsulamento no Java
-- :ok: Java parte 5
-- :ok: (Post) Pegando partes de um texto no Java
-- :ok: (Post) Trocando caracteres de uma String no Java
-- :ok: Java parte 6
-- :ok: (Post) Diferença entre int e Integer em Java
-- :ok: (Post) Arredondando números no Java
-- :ok: Java parte 7
-- :ok: (Post) Design Patterns no Java SE: o Template Method
-- :ok: (Post) Internacionalização no código Java
-- :ok: (Post) Conheça a nova API de datas do Java 8
-- :ok: (Video) Conheça as novidades do Java 9
-- :ok: (Post) O mínimo que você deve saber de Java 10
-- :ok: (Post) Receba notificações da api de Servlet via Listeners
-- :ok: Servlets
-- :ok: Maven
-- :ok: Java e JPA
-- :ok: (Post) Entidades Managed, Transient e Detached no Hibernate e JPA
-- :ok: (Post) JPA com Hibernate: Herança e Mapeamentos
-- :ok: Java e JPA: Otimizações com JPA2 e Hibernate
-- :ok: (Post) Entendendo o Lazy e o Eager Load da JPA
-- :ok: (Post) Os 7 hábitos dos desenvolvedores Hibernate e JPA altamente eficazes
-- (Podcast) Spring Framework – Hipsters #87
-- :ok: Spring MVC I
-- :ok: (Post) Erros com JAXB no Java 9+
+Cursos da [formação desenvolvedor Java](https://cursos.alura.com.br/formacao-java), disponível na plataforma da Alura.
+
+## Passos
+
+### Java e Orientação a Objetos
+
+- [x] Java Dominando as Collections
+- [x] Java parte 1
+- [x] Java parte 2
+- [x] Java parte 3
+- [x] Java parte 4
+- [x] :pencil: Como não aprender Java e Orientação a Objetos: getters e setters
+- [x] :pencil: Revisitando a Orientação a Objetos: encapsulamento no Java
+
+### Bibliotecas Java
+
+- [x] Java parte 5
+- [x] :pencil: Pegando partes de um texto no Java
+- [x] :pencil: Trocando caracteres de uma String no Java
+- [x] Java parte 6
+- [x] :pencil: Diferença entre int e Integer em Java
+- [x] :pencil: Arredondando números no Java
+- [x] Java parte 7
+- [x] :pencil: Design Patterns no Java SE: o Template Method
+- [x] :pencil: Internacionalização no código Java
+- [x] :pencil: Conheça a nova API de datas do Java 8
+- [x] :tv: Conheça as novidades do Java 9
+- [x] :pencil: O mínimo que você deve saber de Java 10
+
+### Servlets e Maven
+
+- [x] :pencil: Receba notificações da api de Servlet via Listeners
+- [x] Servlets
+- [x] Maven
+
+### Banco de dados
+
+- [x] Java e JPA
+- [x] :pencil: Entidades Managed, Transient e Detached no Hibernate e JPA
+- [x] :pencil: JPA com Hibernate: Herança e Mapeamentos
+- [x] Java e JPA: Otimizações com JPA2 e Hibernate
+- [x] :pencil: Entendendo o Lazy e o Eager Load da JPA
+- [x] :pencil: Os 7 hábitos dos desenvolvedores Hibernate e JPA altamente eficazes
+
+### Spring MVC
+
+- :sound: Spring Framework – Hipsters #87
+- [x] Spring MVC I
+- [x] :pencil: Erros com JAXB no Java 9+
 - Spring MVC II
-- (Post) Agendando tarefas com Scheduled do Spring
-- (Video) Alura Live #61 - Programação reativa com Spring 5
+- :pencil: Agendando tarefas com Scheduled do Spring
+- :tv: Alura Live #61 - Programação reativa com Spring 5
+
+### Projeto Formação Desenvolvedor Java
 
 ## Outros cursos Java
 
-- :ok: Java e JDBC
+- [x] Java e JDBC
 - Java e JSTL
 - EJB
 - Java e JSF I
@@ -48,8 +69,8 @@
 - Java EE parte 3
 - Spring Boot
 
-## Outras carreiras para decidir
+## Outras carreiras
 
-- Carreira Expert em Integrações de Aplicações com Java 
-- Carreira Avançando na Plataforma Java 
-- Carreira Expert em Orientação a Objetos com Java 
+- Carreira Expert em Integrações de Aplicações com Java
+- Carreira Avançando na Plataforma Java
+- Carreira Expert em Orientação a Objetos com Java
