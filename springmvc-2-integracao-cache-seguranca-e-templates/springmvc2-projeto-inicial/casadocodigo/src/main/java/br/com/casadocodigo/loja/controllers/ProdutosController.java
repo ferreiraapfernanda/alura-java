@@ -46,7 +46,7 @@ public class ProdutosController {
 	}
 
 	@RequestMapping(method = RequestMethod.POST)
-	@CacheEvict(value = "produtosHome", allEntries=true)
+	@CacheEvict(value = "produtosHome", allEntries = true)
 	public ModelAndView gravar(MultipartFile sumario, @Valid Produto produto, BindingResult result,
 			RedirectAttributes redirectAttributes) {
 
@@ -79,4 +79,5 @@ public class ProdutosController {
 		modelAndView.addObject("produto", produto);
 		return modelAndView;
 	}
+
 }
