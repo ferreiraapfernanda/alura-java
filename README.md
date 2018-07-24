@@ -25,12 +25,12 @@
 - :ok: Java e JPA
 - :ok: (Post) Entidades Managed, Transient e Detached no Hibernate e JPA
 - :ok: (Post) JPA com Hibernate: Herança e Mapeamentos
-- Java e JPA: Otimizações com JPA2 e Hibernate
-- (Post) Entendendo o Lazy e o Eager Load da JPA
-- (Post) Os 7 hábitos dos desenvolvedores Hibernate e JPA altamente eficazes
+- :ok: Java e JPA: Otimizações com JPA2 e Hibernate
+- :ok: (Post) Entendendo o Lazy e o Eager Load da JPA
+- :ok: (Post) Os 7 hábitos dos desenvolvedores Hibernate e JPA altamente eficazes
 - (Podcast) Spring Framework – Hipsters #87
-- Spring MVC I
-- (Post) Erros com JAXB no Java 9+
+- :ok: Spring MVC I
+- :ok: (Post) Erros com JAXB no Java 9+
 - Spring MVC II
 - (Post) Agendando tarefas com Scheduled do Spring
 - (Video) Alura Live #61 - Programação reativa com Spring 5
