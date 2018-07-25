@@ -16,20 +16,20 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableTransactionManagement
 public class JPAConfiguration {
-	
+
 	@Bean
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource) {
-		
+
 		LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
-		
+
 		JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 		factoryBean.setJpaVendorAdapter(vendorAdapter);
 
 		factoryBean.setPackagesToScan("br.com.casadocodigo.loja.models");
-		
+
 		factoryBean.setDataSource(dataSource);
 		factoryBean.setJpaProperties(additionalProperties());
-		
+
 		return factoryBean;
 	}
 
@@ -45,10 +45,10 @@ public class JPAConfiguration {
 	@Profile("dev")
 	private DriverManagerDataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
-		dataSource.setUsername("root");
-		dataSource.setPassword("");
+		dataSource.setUsername("username");
+		dataSource.setPassword("password");
 		dataSource.setUrl("jdbc:mysql://localhost/casadocodigo");
-        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		return dataSource;
 	}
 
@@ -56,6 +56,5 @@ public class JPAConfiguration {
 	public JpaTransactionManager transactionManager(EntityManagerFactory emf) {
 		return new JpaTransactionManager(emf);
 	}
-	
-	
+
 }

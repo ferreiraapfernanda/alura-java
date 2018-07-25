@@ -2,6 +2,7 @@ package br.com.casadocodigo.loja.conf;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.springframework.cache.CacheManager;
@@ -15,6 +16,8 @@ import org.springframework.format.datetime.DateFormatter;
 import org.springframework.format.datetime.DateFormatterRegistrar;
 import org.springframework.format.support.DefaultFormattingConversionService;
 import org.springframework.format.support.FormattingConversionService;
+import org.springframework.mail.MailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.web.accept.ContentNegotiationManager;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartResolver;
@@ -89,15 +92,15 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 				TimeUnit.MINUTES);
 		GuavaCacheManager manager = new GuavaCacheManager();
 		manager.setCacheBuilder(builder);
-		return  manager; //new ConcurrentMapCacheManager();
+		return manager; // new ConcurrentMapCacheManager();
 	}
-	
+
 	@Bean
 	public ViewResolver contentNegotiationViewResolver(ContentNegotiationManager manager) {
 		List<ViewResolver> viewResolvers = new ArrayList<>();
 		viewResolvers.add(internalResourceViewResolver());
 		viewResolvers.add(new JsonViewResolver());
-		
+
 		ContentNegotiatingViewResolver resolver = new ContentNegotiatingViewResolver();
 		resolver.setViewResolvers(viewResolvers);
 		resolver.setContentNegotiationManager(manager);
@@ -108,14 +111,32 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
 		configurer.enable();
 	}
-	
+
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(new LocaleChangeInterceptor());
 	}
-	
+
 	@Bean
-	public LocaleResolver localeResolver(){
-	    return new CookieLocaleResolver();
+	public LocaleResolver localeResolver() {
+		return new CookieLocaleResolver();
+	}
+
+	@Bean
+	public MailSender mailSender() {
+		JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+		mailSender.setHost("smtp.gmail.com");
+		mailSender.setUsername("alura.springmvc@gmail.com");
+		mailSender.setPassword("alura2015");
+		mailSender.setPort(587);
+
+		Properties props = new Properties();
+		props.put("mail.smtp.auth", true);
+		props.put("mail.smtp.starttls.enable", true);
+
+		mailSender.setJavaMailProperties(props);
+
+		return mailSender;
+
 	}
 }

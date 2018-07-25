@@ -12,14 +12,13 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.context.WebApplicationContext;
 
 @Component
-@Scope(value=WebApplicationContext.SCOPE_SESSION, 
-				proxyMode=ScopedProxyMode.TARGET_CLASS)
-public class CarrinhoCompras implements Serializable{
-	
+@Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS)
+public class CarrinhoCompras implements Serializable {
+
 	private static final long serialVersionUID = 1L;
 
 	private Map<CarrinhoItem, Integer> itens = new LinkedHashMap<>();
-	
+
 	public Collection<CarrinhoItem> getItens() {
 		return itens.keySet();
 	}
@@ -29,28 +28,27 @@ public class CarrinhoCompras implements Serializable{
 	}
 
 	public Integer getQuantidade(CarrinhoItem item) {
-		if(!itens.containsKey(item)) {
+		if (!itens.containsKey(item)) {
 			itens.put(item, 0);
 		}
 		return itens.get(item);
 	}
-	
+
 	public int getQuantidade() {
-		return this.itens.values().stream().reduce(0, 
-				(proximo, acumulador) -> proximo + acumulador);
+		return this.itens.values().stream().reduce(0, (proximo, acumulador) -> proximo + acumulador);
 	}
-	
+
 	public BigDecimal getTotal(CarrinhoItem item) {
 		return item.getTotal(getQuantidade(item));
 	}
-	
+
 	public BigDecimal getTotal() {
 		BigDecimal total = BigDecimal.ZERO;
-		
+
 		for (CarrinhoItem item : itens.keySet()) {
 			total = total.add(getTotal(item));
 		}
-		return total ;
+		return total;
 	}
 
 	public void remover(Integer produtoId, TipoPreco tipoPreco) {
@@ -62,5 +60,5 @@ public class CarrinhoCompras implements Serializable{
 	public void limpa() {
 		this.itens.clear();
 	}
-	
+
 }

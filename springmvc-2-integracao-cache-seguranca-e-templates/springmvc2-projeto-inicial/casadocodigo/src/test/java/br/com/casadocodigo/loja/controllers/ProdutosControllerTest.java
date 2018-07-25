@@ -24,37 +24,36 @@ import br.com.casadocodigo.loja.conf.SecurityConfiguration;
 
 @WebAppConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {JPAConfiguration.class, AppWebConfiguration.class, DataSourceConfigurationTest.class, SecurityConfiguration.class})
+@ContextConfiguration(classes = { JPAConfiguration.class, AppWebConfiguration.class, DataSourceConfigurationTest.class,
+		SecurityConfiguration.class })
 @ActiveProfiles("test")
 public class ProdutosControllerTest {
 
 	@Autowired
 	private WebApplicationContext wac;
-	
+
 	@Autowired
 	private Filter springSecurityFilterChain;
 
 	private MockMvc mockMvc;
-	
+
 	@Before
-	public void setup(){
-	    mockMvc = MockMvcBuilders.webAppContextSetup(wac).addFilter(springSecurityFilterChain).build();
-	}	
-	
-	@Test
-	public void deveRetornarParaHomeComOsLivros() throws Exception{
-	    mockMvc.perform(MockMvcRequestBuilders.get("/"))
-	            .andExpect(MockMvcResultMatchers.model().attributeExists("produtos"))
-	            .andExpect(MockMvcResultMatchers.forwardedUrl("/WEB-INF/views/home.jsp"));
+	public void setup() {
+		mockMvc = MockMvcBuilders.webAppContextSetup(wac).addFilter(springSecurityFilterChain).build();
 	}
-	
+
 	@Test
-	public void somenteAdminDeveAcessarProdutosForm() throws Exception{
-	    mockMvc.perform(MockMvcRequestBuilders.get("/produtos/form")
-	            .with(SecurityMockMvcRequestPostProcessors
-	                .user("user@casadocodigo.com.br").password("123456")
-	                .roles("USUARIO")))
-	            .andExpect(MockMvcResultMatchers.status().is(403));
+	public void deveRetornarParaHomeComOsLivros() throws Exception {
+		mockMvc.perform(MockMvcRequestBuilders.get("/"))
+				.andExpect(MockMvcResultMatchers.model().attributeExists("produtos"))
+				.andExpect(MockMvcResultMatchers.forwardedUrl("/WEB-INF/views/home.jsp"));
 	}
-	
+
+	@Test
+	public void somenteAdminDeveAcessarProdutosForm() throws Exception {
+		mockMvc.perform(MockMvcRequestBuilders.get("/produtos/form").with(SecurityMockMvcRequestPostProcessors
+				.user("user@casadocodigo.com.br").password("123456").roles("USUARIO")))
+				.andExpect(MockMvcResultMatchers.status().is(403));
+	}
+
 }

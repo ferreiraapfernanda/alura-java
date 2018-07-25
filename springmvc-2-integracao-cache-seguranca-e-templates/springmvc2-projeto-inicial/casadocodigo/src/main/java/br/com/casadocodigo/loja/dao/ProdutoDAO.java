@@ -19,26 +19,25 @@ public class ProdutoDAO {
 
 	@PersistenceContext
 	private EntityManager manager;
-	
+
 	public void gravar(Produto produto) {
 		manager.persist(produto);
 	}
 
 	public List<Produto> listar() {
-		return manager.createQuery("select p from Produto p", Produto.class)
-				.getResultList();
+		return manager.createQuery("select distinct(p) from Produto p", Produto.class).getResultList();
 	}
 
 	public Produto find(Integer id) {
-        return manager.createQuery("select distinct(p) from Produto p join fetch p.precos precos where p.id = :id", 
-        		Produto.class).setParameter("id", id)
-        		.getSingleResult();
+		return manager.createQuery("select distinct(p) from Produto p join fetch p.precos precos where p.id = :id",
+				Produto.class).setParameter("id", id).getSingleResult();
 	}
-	
-	public BigDecimal somaPrecosPorTipo(TipoPreco tipoPreco){
-	    TypedQuery<BigDecimal> query = manager.createQuery("select sum(preco.valor) from Produto p join p.precos preco "
-	    		+ "where preco.tipo = :tipoPreco", BigDecimal.class);
-	    query.setParameter("tipoPreco", tipoPreco);
-	    return query.getSingleResult();
+
+	public BigDecimal somaPrecosPorTipo(TipoPreco tipoPreco) {
+		TypedQuery<BigDecimal> query = manager.createQuery(
+				"select sum(preco.valor) from Produto p join p.precos preco " + "where preco.tipo = :tipoPreco",
+				BigDecimal.class);
+		query.setParameter("tipoPreco", tipoPreco);
+		return query.getSingleResult();
 	}
 }
