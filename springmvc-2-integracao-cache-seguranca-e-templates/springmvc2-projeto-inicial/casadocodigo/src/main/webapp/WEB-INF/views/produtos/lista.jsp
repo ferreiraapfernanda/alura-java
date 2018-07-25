@@ -29,7 +29,7 @@
 	<ul class="nav navbar-nav navbar-right">
 		<li class="nav-item"><security:authentication
 				property="principal" var="usuario" /> Usuário: ${usuario.username }</li>
-		<li class="nav-item"><a class="nav-link" href="logout">Logout</a></li>
+		<li class="nav-item">< <a href="<c:url value="/logout" />">Sair</a></span></li>
 	</ul>
 	</nav>
 
