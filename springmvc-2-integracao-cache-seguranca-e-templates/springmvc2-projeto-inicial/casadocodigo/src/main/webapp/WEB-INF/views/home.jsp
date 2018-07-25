@@ -2,6 +2,8 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
+<%@ taglib uri="http://www.springframework.org/security/tags"
+	prefix="security"%>
 
 <!DOCTYPE html>
 <html>
@@ -52,11 +54,20 @@
 			<div id="header-content">
 				<nav id="main-nav">
 					<ul class="clearfix">
+
+						<!-- security:authorize access="isAuthenticated()"-->
+						<security:authorize access="hasRole('ROLE_ADMIN')">
+
+							<li><a href="${s:mvcUrl('PC#listar').build() }"
+								rel="nofollow">Lista de Produtos</a></li>
+							<li><a href="${s:mvcUrl('PC#form').build() }">Cadastro
+									de Produtos</a></li>
+
+						</security:authorize>
+
 						<li><a href="/cart" rel="nofollow">Carrinho</a></li>
 						<li><a href="/pages/sobre-a-casa-do-codigo" rel="nofollow">Sobre
 								Nós</a></li>
-						<li><a href="/pages/perguntas-frequentes" rel="nofollow">Perguntas
-								Frequentes</a></li>
 					</ul>
 				</nav>
 			</div>

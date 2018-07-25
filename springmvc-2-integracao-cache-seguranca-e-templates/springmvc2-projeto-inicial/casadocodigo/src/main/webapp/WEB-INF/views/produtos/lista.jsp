@@ -2,6 +2,8 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
+<%@ taglib uri="http://www.springframework.org/security/tags"
+	prefix="security"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -18,14 +20,17 @@
 	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 	<a class="navbar-brand" href="${s:mvcUrl('HC#index').build() }">Casa
 		do Código</a>
-	<div>
-		<ul class="nav">
-			<li class="nav-item"><a class="nav-link"
-				href="${s:mvcUrl('PC#listar').build() }">Lista de Produtos</a></li>
-			<li class="nav-item"><a class="nav-link"
-				href="${s:mvcUrl('PC#form').build() }">Cadastro de Produtos</a></li>
-		</ul>
-	</div>
+	<ul class="nav navbar-nav mr-auto">
+		<li class="nav-item"><a class="nav-link"
+			href="${s:mvcUrl('PC#listar').build() }">Lista de Produtos</a></li>
+		<li class="nav-item"><a class="nav-link"
+			href="${s:mvcUrl('PC#form').build() }">Cadastro de Produtos</a></li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+		<li class="nav-item"><security:authentication
+				property="principal" var="usuario" /> Usuário: ${usuario.username }</li>
+		<li class="nav-item"><a class="nav-link" href="logout">Logout</a></li>
+	</ul>
 	</nav>
 
 	<div class="container pt-4">
