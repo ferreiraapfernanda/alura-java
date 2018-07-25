@@ -58,5 +58,9 @@ public class CarrinhoCompras implements Serializable{
 		produto.setId(produtoId);
 		this.itens.remove(new CarrinhoItem(produto, tipoPreco));
 	}
+
+	public void limpa() {
+		this.itens.clear();
+	}
 	
 }

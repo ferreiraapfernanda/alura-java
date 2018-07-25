@@ -14,18 +14,16 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
 public class Usuario implements UserDetails {
-
+	
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	private String email;
-
 	private String senha;
-
 	private String nome;
-
+	
 	@OneToMany(fetch=FetchType.EAGER)
-	private List<Role> roles = new ArrayList<Role>();
+	private List<Role> roles = new ArrayList<>();
 
 	public String getEmail() {
 		return email;
@@ -50,7 +48,7 @@ public class Usuario implements UserDetails {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
+	
 	public List<Role> getRoles() {
 		return roles;
 	}
@@ -93,5 +91,4 @@ public class Usuario implements UserDetails {
 	public boolean isEnabled() {
 		return true;
 	}
-
 }

@@ -16,14 +16,14 @@ public class HomeController {
 
 	@Autowired
 	private ProdutoDAO produtoDao;
-
+	
 	@RequestMapping("/")
 	@Cacheable(value="produtosHome")
 	public ModelAndView index() {
 		List<Produto> produtos = produtoDao.listar();
 		ModelAndView modelAndView = new ModelAndView("home");
 		modelAndView.addObject("produtos", produtos);
-
+		
 		return modelAndView;
 	}
 }
