@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="br.com.casadocodigo.loja.dao.ProdutoDAOTest" time="0.198" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/home/fernanda/.sdkman/candidates/java/8.0.172-zulu/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.172-b01"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/fernanda/github/alura-java/springmvc-2-integracao-cache-seguranca-e-templates/springmvc2-projeto-inicial/casadocodigo"/>
+    <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/fernanda/github/alura-java/springmvc-2-integracao-cache-seguranca-e-templates/springmvc2-projeto-inicial/casadocodigo"/>
+    <property name="java.runtime.version" value="1.8.0_172-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/home/fernanda/.sdkman/candidates/java/8.0.172-zulu/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/fernanda/.sdkman/candidates/maven/current/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/home/fernanda/.sdkman/candidates/maven/current/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-29-generic"/>
+    <property name="library.jansi.path" value="/home/fernanda/.sdkman/candidates/maven/current/lib/jansi-native"/>
+    <property name="user.home" value="/home/fernanda"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="fernanda"/>
+    <property name="java.class.path" value="/home/fernanda/.sdkman/candidates/maven/current/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/home/fernanda/.sdkman/candidates/java/8.0.172-zulu/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="pt"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_172"/>
+    <property name="java.ext.dirs" value="/home/fernanda/.sdkman/candidates/java/8.0.172-zulu/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/home/fernanda/.sdkman/candidates/java/8.0.172-zulu/jre/lib/resources.jar:/home/fernanda/.sdkman/candidates/java/8.0.172-zulu/jre/lib/rt.jar:/home/fernanda/.sdkman/candidates/java/8.0.172-zulu/jre/lib/sunrsasign.jar:/home/fernanda/.sdkman/candidates/java/8.0.172-zulu/jre/lib/jsse.jar:/home/fernanda/.sdkman/candidates/java/8.0.172-zulu/jre/lib/jce.jar:/home/fernanda/.sdkman/candidates/java/8.0.172-zulu/jre/lib/charsets.jar:/home/fernanda/.sdkman/candidates/java/8.0.172-zulu/jre/lib/jfr.jar:/home/fernanda/.sdkman/candidates/java/8.0.172-zulu/jre/classes"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="maven.home" value="/home/fernanda/.sdkman/candidates/maven/current"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="br.com.casadocodigo.loja.dao.ProdutoDAOTest" name="deveSomarTodosOsPrecosPorTipoLivro" time="0.198"/>
+</testsuite>

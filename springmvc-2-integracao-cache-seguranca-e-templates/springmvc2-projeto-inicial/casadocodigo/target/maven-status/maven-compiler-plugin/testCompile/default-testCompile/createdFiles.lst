@@ -1,0 +1,4 @@
+br/com/casadocodigo/loja/controllers/ProdutosControllerTest.class
+br/com/casadocodigo/loja/builders/ProdutoBuilder.class
+br/com/casadocodigo/loja/conf/DataSourceConfigurationTest.class
+br/com/casadocodigo/loja/dao/ProdutoDAOTest.class

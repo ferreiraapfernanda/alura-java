@@ -13,11 +13,11 @@
 	<h2>Erro genérico acontecendo!</h2>
 	
 	<!-- 
-	Mensagem: ${exception.message}
-	<c:forEach items="${exception.stackTrace}" var="stack">
-		${stack}
-	</c:forEach>
-	 -->
+        Mensagem: ${exception.message}
+        <c:forEach items="${exception.stackTrace}" var="stk">
+            ${stk}
+        </c:forEach>    
+    -->
 	
 	</section>
 

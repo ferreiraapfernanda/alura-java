@@ -12,7 +12,7 @@ public class ExceptionHandlerController {
 		System.out.println("erro genérico acontecendo");
 		e.printStackTrace();
 		ModelAndView modelAndView = new ModelAndView("error");
-		modelAndView.addObject("excepction", e);
+		modelAndView.addObject("exception", e);
 		return modelAndView;
 	}
 }
