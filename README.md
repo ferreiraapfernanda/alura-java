@@ -50,8 +50,8 @@ Cursos da [formação desenvolvedor Java](https://cursos.alura.com.br/formacao-j
 - [ ] :sound: Spring Framework – Hipsters #87
 - [x] Spring MVC I
 - [x] :pencil: Erros com JAXB no Java 9+
-- [ ] Spring MVC II
-- [ ] :pencil: Agendando tarefas com Scheduled do Spring
+- [x] Spring MVC II
+- [x] :pencil: Agendando tarefas com Scheduled do Spring
 - [ ] :tv: Alura Live #61 - Programação reativa com Spring 5
 
 ### Projeto Formação Desenvolvedor Java
@@ -59,6 +59,7 @@ Cursos da [formação desenvolvedor Java](https://cursos.alura.com.br/formacao-j
 ## Outros cursos Java
 
 - [x] Java e JDBC
+- [ ] Spring Boot
 - [ ] Java e JSTL
 - [ ] EJB
 - [ ] Java e JSF I
@@ -67,7 +68,6 @@ Cursos da [formação desenvolvedor Java](https://cursos.alura.com.br/formacao-j
 - [ ] Java EE parte 1
 - [ ] Java EE parte 2
 - [ ] Java EE parte 3
-- [ ] Spring Boot
 
 ## Outras carreiras
 
