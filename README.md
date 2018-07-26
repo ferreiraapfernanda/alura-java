@@ -1,9 +1,9 @@
 
-# Formação Desenvolvedor Java
+# Cursos de Java @ Alura
+
+## Formação Desenvolvedor Java
 
 Cursos da [formação desenvolvedor Java](https://cursos.alura.com.br/formacao-java), disponível na plataforma da Alura.
-
-## Passos
 
 ### Java e Orientação a Objetos
 
@@ -56,7 +56,7 @@ Cursos da [formação desenvolvedor Java](https://cursos.alura.com.br/formacao-j
 
 ### Projeto Formação Desenvolvedor Java
 
-## Outros cursos Java
+## Outros Cursos
 
 - [x] Java e JDBC
 - [ ] Spring Boot
