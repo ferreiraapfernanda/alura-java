@@ -49,6 +49,13 @@
 			<version>1.3.6.RELEASE</version>
 		</dependency>
 
+		<!-- Enviador de Email -->
+		<dependency>
+			<groupId>br.com.alura.enviadorEmail</groupId>
+			<artifactId>enviadorEmail</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 
 	</dependencies>
 
