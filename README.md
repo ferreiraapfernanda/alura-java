@@ -60,7 +60,7 @@ Cursos da [formação desenvolvedor Java](https://cursos.alura.com.br/formacao-j
 
 - [x] Java e JDBC
 - [x] Spring Boot
-- [ ] Java e JSTL
+- [x] Java e JSTL
 - [ ] EJB
 - [ ] Java e JSF I
 - [ ] Java e JSF 2 - II
