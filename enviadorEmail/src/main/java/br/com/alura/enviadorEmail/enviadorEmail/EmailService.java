@@ -8,18 +8,17 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class EmailService {
-
-	public void enviar(String nome, String emailDestinatario) {
-
+	
+	public void enviar(String nome, String emailDestinatario){
+		
 		try {
 			Email email = new SimpleEmail();
-
-			email.setHostName("smtp.googleemail.com");
+			email.setHostName("smtp.googlemail.com");
 			email.setSmtpPort(465);
-			email.setAuthenticator(new DefaultAuthenticator("email", "password"));
+			email.setAuthenticator(new DefaultAuthenticator("springbootalura@gmail.com", "springboot"));
 			email.setSSLOnConnect(true);
 
-			email.setFrom("email");
+			email.setFrom("springbootalura@gmail.com");
 			email.setSubject("Você foi convidado pelo ListaVIP");
 			email.setMsg("Olá " + nome + ". Você acaba de ser convidado pelo ListaVIP.");
 			email.addTo(emailDestinatario);
@@ -28,5 +27,9 @@ public class EmailService {
 		} catch (EmailException e) {
 			e.printStackTrace();
 		}
+		
+		
+		
 	}
+
 }

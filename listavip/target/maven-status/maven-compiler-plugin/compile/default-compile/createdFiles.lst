@@ -1,0 +1,5 @@
+br/com/alura/listavip/ConvidadoController.class
+br/com/alura/listavip/service/ConvidadoService.class
+br/com/alura/listavip/model/Convidado.class
+br/com/alura/listavip/Configuracao.class
+br/com/alura/listavip/repository/ConvidadoRepository.class

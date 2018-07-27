@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import br.com.alura.enviadorEmail.enviadorEmail.EmailService;
 import br.com.alura.listavip.model.Convidado;
-import br.com.alura.listavip.repository.ConvidadoRepository;
 import br.com.alura.listavip.service.ConvidadoService;
+
 
 @Controller
 public class ConvidadoController {
