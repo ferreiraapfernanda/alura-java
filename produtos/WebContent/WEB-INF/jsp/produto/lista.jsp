@@ -25,8 +25,10 @@
 <body>
 
   <h1>Produtos</h1>
-  
-  <h2><fmt:message key="mensagem.bemvindo"/></h2>
+
+  <h2>
+    <fmt:message key="mensagem.bemvindo" />
+  </h2>
 
   <div id="mensagem"></div>
 
@@ -73,7 +75,9 @@
   <!--<c:set var="nome" value="João da Silva" />
   <c:out value="${nome}" />-->
 
-  <a href="<c:url value="/produto/formulario"/>"><fmt:message key="mensagem.novoProduto"/></a>
+  <a href="<c:url value="/produto/formulario"/>"><fmt:message key="mensagem.novoProduto" /></a>
+
+  <c:import url="../_comum/rodape.jsp" />
 
 </body>
 </html>
