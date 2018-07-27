@@ -1,0 +1,49 @@
+:::::::::::::::::::::::::::::::::::::
+:: Configuração do modulo do MySQL ::
+:::::::::::::::::::::::::::::::::::::
+
+Crie pasta:
+
+jboss-as-7.1.1.Final/modules/com/mysql/main
+
+Para esta pasta copie os arquivos modules.xml e o JAR do driver do MySQL (dentro da pasta 
+resources/module-mysql).
+
+:::::::::::::::::::::::::::::::::::::
+:: Configuração do driver do MySQL ::
+:::::::::::::::::::::::::::::::::::::
+
+Abra o arquivo jboss-as-7.1.1.Final/standalone/configuration/standalone.xml e 
+adicione dentro da tag <drivers>:
+
+<!-- Demais drivers declarados aqui -->
+
+<driver name="com.mysql" module="com.mysql">
+	<xa-datasource-class>
+		com.mysql.jdbc.jdbc2.optional.MysqlXADataSource
+	</xa-datasource-class>
+</driver>
+
+
+::::::::::::::::::::::::::::::::
+:: Configuração do DataSource ::
+::::::::::::::::::::::::::::::::
+
+Ainda no standalone.xml (jboss-as-7.1.1.Final/standalone/configuration/standalone.xml) 
+adicione dentro da tag <datasources>:
+
+<datasource jndi-name="java:/livrariaDS" pool-name="livrariaDS"
+	enabled="true" use-java-context="true">
+	
+	<connection-url>jdbc:mysql://localhost:3306/livraria</connection-url>
+	<driver>com.mysql</driver>
+	<pool>
+		<min-pool-size>10</min-pool-size>
+		<max-pool-size>100</max-pool-size>
+		<prefill>true</prefill>
+	</pool>
+	<security>
+		<user-name>root</user-name>
+		<password></password>
+	</security>
+</datasource>

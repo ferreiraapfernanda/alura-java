@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="_template.xhtml">
+	<ui:define name="corpo">
+		
+		<h:form id="formLivro" prependId="false">
+			<p:panelGrid columns="2">
+			 	<f:facet name="header">  
+		    		Cadastro de livros
+				</f:facet>
+			
+				<p:outputLabel value="Título: " />
+				<p:inputText id="titulo" value="#{livroBean.livro.titulo}"  required="true"/>
+				
+				<p:outputLabel value="Autor: " />
+				<p:selectOneMenu  value="#{livroBean.autorId}"  effect="fade" >  
+		            <f:selectItems value="#{livroBean.autores}" var="autor" 
+		            				itemValue="#{autor.id}" itemLabel="#{autor.nome}" />  
+		        </p:selectOneMenu>  
+	
+			    <f:facet name="footer">  
+					<p:commandButton value="Salvar" action="#{livroBean.cadastra}" 
+										update="@form :tabelaLivros :mensagens" />
+				</f:facet>
+			</p:panelGrid>
+		</h:form>
+			
+	<p:separator id="separator"/>
+	
+	<h3>Livros</h3>
+	
+	<h:form id="tabelaLivros">
+	    <p:dataTable var="livro" value="#{livroBean.livros}">
+	    
+	        <p:column headerText="Título">
+	            <h:outputText value="#{livro.titulo}" />
+	        </p:column>
+	
+	        <p:column headerText="Autor">
+	            <h:outputText value="#{livro.autor.nome}" />
+	        </p:column>
+	
+	    </p:dataTable>
+	</h:form>
+	</ui:define>
+</ui:composition>
+	
+</html>
