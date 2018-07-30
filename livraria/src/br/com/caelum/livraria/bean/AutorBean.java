@@ -1,29 +1,24 @@
 package br.com.caelum.livraria.bean;
 
-import java.util.List;
+import javax.faces.bean.ManagedBean;
 
-import javax.enterprise.inject.Model;
-import javax.inject.Inject;
-
+import br.com.caelum.livraria.dao.DAO;
 import br.com.caelum.livraria.modelo.Autor;
 
-@Model
+@ManagedBean
 public class AutorBean {
-	
+
 	private Autor autor = new Autor();
-	
-	@Inject
-	private AutorService service;
-	
+
 	public Autor getAutor() {
 		return autor;
 	}
-	
-	public void cadastra() {
+
+	public void gravar() {
+		System.out.println("Gravando autor " + this.autor.getNome());
+
+		new DAO<Autor>(Autor.class).adiciona(this.autor);
+		
 		this.autor = new Autor();
-	}
-	
-	public List<Autor> getAutores() {
-		return this.service.todosAutores();
 	}
 }

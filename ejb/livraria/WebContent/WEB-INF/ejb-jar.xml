@@ -1,0 +1,31 @@
+<ejb-jar xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+ http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd"
+ version="3.1">
+
+	 <interceptors>
+	 	<interceptor>
+	 		<interceptor-class>
+				br.com.caelum.livraria.interceptador.LogInterceptador
+			</interceptor-class>
+	 	</interceptor>
+	 </interceptors>
+	 
+	 <assembly-descriptor>
+		<interceptor-binding>
+			<ejb-name>AutorDao</ejb-name>
+			<interceptor-class>
+				br.com.caelum.livraria.interceptador.LogInterceptador
+			</interceptor-class>
+		</interceptor-binding>
+		
+		 <interceptor-binding>
+            <ejb-name>AutorService</ejb-name>
+            <interceptor-class>
+                br.com.caelum.livraria.interceptador.LogInterceptador
+            </interceptor-class>
+        </interceptor-binding>
+	</assembly-descriptor>
+
+</ejb-jar>
