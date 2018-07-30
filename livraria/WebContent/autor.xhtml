@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
-  xmlns:f="http://java.sun.com/jsf/core">
+  xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets">
 
-<h:body>
-  <h1>Novo Autor</h1>
-  <h:form>
-    <fieldset>
-      <legend>Dados do Autor</legend>
-      <h:panelGrid columns="2">
-        <h:outputLabel value="Nome:" for="nome" />
-        <h:inputText id="nome" value="#{autorBean.autor.nome}" required="true">
-          <f:validateLength minimum="5" />
-        </h:inputText>
-        <h:message for="nome" />
-        <h:commandButton value="Gravar" action="#{autorBean.gravar}" />
-      </h:panelGrid>
-    </fieldset>
-  </h:form>
-</h:body>
+<ui:composition template="_template.xhtml">
+
+  <ui:define name="titulo">Novo Autor</ui:define>
+
+  <ui:define name="conteudo">
+    <h:form>
+      <fieldset>
+        <legend>Dados do Autor</legend>
+        <h:panelGrid columns="2">
+          <h:outputLabel value="Nome:" for="nome" />
+          <h:inputText id="nome" value="#{autorBean.autor.nome}" required="true">
+            <f:validateLength minimum="5" />
+          </h:inputText>
+          <h:message for="nome" />
+          <h:commandButton value="Gravar" action="#{autorBean.gravar}" />
+        </h:panelGrid>
+      </fieldset>
+    </h:form>
+  </ui:define>
+
+  <ui:define name="titulo-pagina">Cadastro de Autor</ui:define>
+
+</ui:composition>
 
 </html>
