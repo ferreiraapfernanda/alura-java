@@ -67,6 +67,11 @@
             <h:column>
               <h:outputText value="#{autor.nome}" />
             </h:column>
+
+            <h:column>
+              <h:commandLink value="X" action="#{livroBean.removerAutor(autor)}" />
+            </h:column>
+
           </h:dataTable>
 
         </h:panelGrid>
@@ -74,38 +79,50 @@
       </fieldset>
 
       <h:commandButton value="Gravar" action="#{livroBean.gravar}">
-        <f:ajax execute="@form" render="@form :tabelaLivros" />
+        <f:ajax execute="@form" render="@form :formTabelaLivros:tabelaLivros" />
       </h:commandButton>
     </h:form>
 
+    <h:form id="formTabelaLivros">
+      <h:dataTable id="tabelaLivros" value="#{livroBean.livros}" var="livro">
 
-    <h:dataTable id="tabelaLivros" value="#{livroBean.livros}" var="livro">
+        <h:column>
+          <f:facet name="header">Título</f:facet>
+          <h:outputText value="${livro.titulo}" />
+        </h:column>
 
-      <h:column>
-        <f:facet name="header">Título</f:facet>
-        <h:outputText value="${livro.titulo}" />
-      </h:column>
+        <h:column>
+          <f:facet name="header">ISBN</f:facet>
+          <h:outputText value="${livro.isbn}" />
+        </h:column>
 
-      <h:column>
-        <f:facet name="header">ISBN</f:facet>
-        <h:outputText value="${livro.isbn}" />
-      </h:column>
+        <h:column>
+          <f:facet name="header">Preço</f:facet>
+          <h:outputText value="${livro.preco}">
+            <f:convertNumber type="currency" pattern="R$ #0.00" currencySymbol="R$" locale="pt_BR" />
+          </h:outputText>
+        </h:column>
 
-      <h:column>
-        <f:facet name="header">Preço</f:facet>
-        <h:outputText value="${livro.preco}">
-          <f:convertNumber type="currency" pattern="R$ #0.00" currencySymbol="R$" locale="pt_BR" />
-        </h:outputText>
-      </h:column>
+        <h:column>
+          <f:facet name="header">Data</f:facet>
+          <h:outputText value="${livro.dataLancamento.time}">
+            <f:convertDateTime pattern="dd/MM/yyyy HH:mm" />
+          </h:outputText>
+        </h:column>
 
-      <h:column>
-        <f:facet name="header">Data</f:facet>
-        <h:outputText value="${livro.dataLancamento.time}">
-          <f:convertDateTime pattern="dd/MM/yyyy HH:mm" />
-        </h:outputText>
-      </h:column>
+        <h:column>
+          <f:facet name="header">Remoção</f:facet>
+          <h:commandLink value="Remover" action="#{livroBean.remover(livro)}" />
+        </h:column>
 
-    </h:dataTable>
+        <h:column>
+          <f:facet name="header">Alteração</f:facet>
+          <h:commandLink value="Alterar" action="#{livroBean.carregar(livro)}" />
+        </h:column>
+
+
+      </h:dataTable>
+    </h:form>
 
   </ui:define>
 
