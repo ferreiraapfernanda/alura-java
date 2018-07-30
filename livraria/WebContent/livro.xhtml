@@ -6,21 +6,33 @@
 <h:body>
   <h1>Novo Livro</h1>
   <h:form>
+
+    <h:messages />
+
     <fieldset>
       <legend>Dados do Livro</legend>
       <h:panelGrid columns="2">
 
         <h:outputLabel value="Titulo:" for="titulo" />
-        <h:inputText id="titulo" value="#{livroBean.livro.titulo}" />
+        <h:inputText id="titulo" value="#{livroBean.livro.titulo}" required="true"
+          requiredMessage="Título obrigatório"
+          validatorMessage="Título não pode ser superior a 40 caracteres">
+          <f:validateLength maximum="40" />
+        </h:inputText>
 
         <h:outputLabel value="ISBN:" for="isbn" />
-        <h:inputText id="isbn" value="#{livroBean.livro.isbn}" />
+        <h:inputText id="isbn" value="#{livroBean.livro.isbn}"
+          validator="#{livroBean.comecaComDigitoUm}" />
 
         <h:outputLabel value="Preço:" for="preco" />
-        <h:inputText id="preco" value="#{livroBean.livro.preco}" />
+        <h:inputText id="preco" value="#{livroBean.livro.preco}">
+          <f:validateDoubleRange maximum="1000.00" minimum="1.0" />
+        </h:inputText>
 
         <h:outputLabel value="Data de Lançamento:" for="dataLancamento" />
-        <h:inputText id="dataLancamento" value="#{livroBean.livro.dataLancamento}" />
+        <h:inputText id="dataLancamento" value="#{livroBean.livro.dataLancamento.time}">
+          <f:convertDateTime pattern="dd/MM/yyyy HH:mm" />
+        </h:inputText>
 
       </h:panelGrid>
     </fieldset>
@@ -71,7 +83,9 @@
 
     <h:column>
       <f:facet name="header">Data</f:facet>
-      <h:outputText value="${livro.dataLancamento}" />
+      <h:outputText value="${livro.dataLancamento.time}">
+        <f:convertDateTime pattern="dd/MM/yyyy HH:mm" />
+      </h:outputText>
     </h:column>
 
   </h:dataTable>
