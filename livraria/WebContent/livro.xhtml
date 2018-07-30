@@ -57,6 +57,10 @@
           <f:ajax execute="autor" render="tabelaAutores" />
         </h:commandButton>
 
+        <br />
+
+        <h:commandLink value="Cadastrar novo autor" action="#{livroBean.formAutor}" immediate="true" />
+
         <h:dataTable value="#{livroBean.autoresDoLivro}" var="autor" id="tabelaAutores">
           <h:column>
             <h:outputText value="#{autor.nome}" />
