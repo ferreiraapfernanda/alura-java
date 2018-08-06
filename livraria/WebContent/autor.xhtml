@@ -8,7 +8,9 @@
   <ui:define name="titulo">Novo Autor</ui:define>
 
   <ui:define name="conteudo">
+
     <h:form>
+
       <fieldset>
         <legend>Dados do Autor</legend>
         <h:panelGrid columns="2">
@@ -20,7 +22,45 @@
           <h:commandButton value="Gravar" action="#{autorBean.gravar}" />
         </h:panelGrid>
       </fieldset>
+
     </h:form>
+
+    <br />
+
+    <h:form id="formTabelaAutores">
+
+      <h:dataTable id="tabelaAutores" value="#{autorBean.autores}" var="autor">
+
+        <h:column>
+          <f:facet name="header">Id</f:facet>
+          <h:outputText value="${autor.id}" />
+        </h:column>
+
+        <h:column>
+          <f:facet name="header">Nome</f:facet>
+          <h:outputText value="${autor.nome}" />
+        </h:column>
+
+        <h:column>
+          <f:facet name="header">Remoção</f:facet>
+          <h:commandLink value="Remover" action="#{autorBean.remover(autor)}" />
+        </h:column>
+
+        <h:column>
+          <f:facet name="header">Alteração</f:facet>
+
+          <h:commandLink value="Alterar">
+            <f:setPropertyActionListener target="#{autorBean.autor}" value="#{autor}" />
+          </h:commandLink>
+
+        </h:column>
+
+
+
+      </h:dataTable>
+
+    </h:form>
+
   </ui:define>
 
   <ui:define name="titulo-pagina">Cadastro de Autor</ui:define>
