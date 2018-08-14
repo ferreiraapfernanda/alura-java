@@ -81,4 +81,8 @@ public class Carrinho {
 		return new XStream().toXML(this);
 	}
 
+	public String toJson() {
+		return new Gson().toJson(this);
+	}
+
 }
