@@ -8,6 +8,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.glassfish.grizzly.http.server.HttpServer;
+import org.glassfish.jersey.client.ClientConfig;
+import org.glassfish.jersey.filter.LoggingFilter;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -22,10 +24,15 @@ import br.com.alura.loja.modelo.Projeto;
 public class ClienteTest {
 
 	private HttpServer servidor;
+	private Client client;
 
 	@Before
 	public void startaServidor() {
 		servidor = Servidor.inicializaServidor();
+
+		ClientConfig config = new ClientConfig();
+		config.register(new LoggingFilter());
+		this.client = ClientBuilder.newClient(config);
 	}
 
 	@After
@@ -36,10 +43,6 @@ public class ClienteTest {
 	@Test
 	public void testaQueBuscarUmCarrinhoTrazOCarrinhoEsperado() {
 
-		// Executar com Run As > JUnit Test
-
-		// Cliente para acessar o servidor
-		Client client = ClientBuilder.newClient();
 		// URI base para as requisições
 		WebTarget target = client.target("http://localhost:8080/");
 		// Requisição específica
@@ -78,9 +81,8 @@ public class ClienteTest {
 		Entity<String> entity = Entity.entity(xml, MediaType.APPLICATION_XML);
 
 		Response response = target.path("carrinhos").request().post(entity);
-		
+
 		Assert.assertEquals(response.getStatus(), 201);
-		
 
 	}
 
