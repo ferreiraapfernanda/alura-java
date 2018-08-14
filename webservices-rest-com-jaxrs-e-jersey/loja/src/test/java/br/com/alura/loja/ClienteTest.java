@@ -38,7 +38,7 @@ public class ClienteTest {
 		// URI base para as requisições
 		WebTarget target = client.target("http://localhost:8080/");
 		// Requisição específica
-		String conteudo = target.path("carrinhos").request().get(String.class);
+		String conteudo = target.path("carrinhos/1").request().get(String.class);
 
 		Carrinho carrinho = (Carrinho) new XStream().fromXML(conteudo);
 
