@@ -46,9 +46,7 @@ public class ClienteTest {
 		// URI base para as requisições
 		WebTarget target = client.target("http://localhost:8080/");
 		// Requisição específica
-		String conteudo = target.path("carrinhos/1").request().get(String.class);
-
-		Carrinho carrinho = (Carrinho) new XStream().fromXML(conteudo);
+		Carrinho carrinho = target.path("carrinhos/1").request().get(Carrinho.class);
 
 		Assert.assertEquals(carrinho.getRua(), "Rua Vergueiro 3185, 8 andar");
 	}
@@ -58,9 +56,7 @@ public class ClienteTest {
 
 		Client client = ClientBuilder.newClient();
 		WebTarget target = client.target("http://localhost:8080/");
-		String resultado = target.path("projetos/1").request().get(String.class);
-
-		Projeto projeto = (Projeto) new XStream().fromXML(resultado);
+		Projeto projeto = target.path("projetos/1").request().get(Projeto.class);
 
 		Assert.assertEquals(projeto.getId(), 1l);
 	}
@@ -75,15 +71,26 @@ public class ClienteTest {
 		carrinho.setRua("Jayme Theodoro");
 		carrinho.setCidade("Sorocaba");
 
-		String xml = carrinho.toXML();
-
 		// Representando que o tipo de dado é XML
-		Entity<String> entity = Entity.entity(xml, MediaType.APPLICATION_XML);
+		Entity<Carrinho> entity = Entity.entity(carrinho, MediaType.APPLICATION_XML);
 
 		Response response = target.path("carrinhos").request().post(entity);
 
 		Assert.assertEquals(response.getStatus(), 201);
 
 	}
+	
+	@Test
+    public void testaQueSuportaNovosCarrinhos(){
+        WebTarget target = client.target("http://localhost:8080");
+        Carrinho carrinho = new Carrinho();
+        carrinho.adiciona(new Produto(314L, "Tablet", 999, 1));
+        carrinho.setRua("Rua Vergueiro");
+        carrinho.setCidade("Sao Paulo");
+
+        Entity<Carrinho> entity = Entity.entity(carrinho, MediaType.APPLICATION_XML);
+        Response response = target.path("/carrinhos").request().post(entity);
+        Assert.assertEquals(201, response.getStatus());
+    }
 
 }
