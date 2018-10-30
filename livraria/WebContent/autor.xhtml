@@ -1,69 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
-  xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
 
 <ui:composition template="_template.xhtml">
 
-  <ui:define name="titulo">Novo Autor</ui:define>
+	<f:metadata>
+		<f:viewParam name="autorId" value="#{autorBean.autorId}" />
+		<f:viewAction action="#{autorBean.carregaAutorPelaId}" />
+	</f:metadata>
+	<ui:define name="titulo">Novo Autor</ui:define>
 
-  <ui:define name="conteudo">
+	<ui:define name="conteudo">
 
-    <h:form>
+		<h:form>
 
-      <fieldset>
-        <legend>Dados do Autor</legend>
-        <h:panelGrid columns="2">
-          <h:outputLabel value="Nome:" for="nome" />
-          <h:inputText id="nome" value="#{autorBean.autor.nome}" required="true">
-            <f:validateLength minimum="5" />
-          </h:inputText>
-          <h:message for="nome" />
-          <h:commandButton value="Gravar" action="#{autorBean.gravar}" />
-        </h:panelGrid>
-      </fieldset>
+			<fieldset>
+				<legend>Dados do Autor</legend>
+				<h:panelGrid columns="2">
+					<h:outputLabel value="Nome:" for="nome" />
+					<h:inputText id="nome" value="#{autorBean.autor.nome}" required="true">
+						<f:validateLength minimum="5" />
+					</h:inputText>
+					<h:message for="nome" />
+					<h:commandButton value="Gravar" action="#{autorBean.gravar}" />
+				</h:panelGrid>
+			</fieldset>
 
-    </h:form>
+		</h:form>
 
-    <br />
+		<br />
 
-    <h:form id="formTabelaAutores">
+		<h:form id="formTabelaAutores">
 
-      <h:dataTable id="tabelaAutores" value="#{autorBean.autores}" var="autor">
+			<h:dataTable id="tabelaAutores" value="#{autorBean.autores}" var="autor">
 
-        <h:column>
-          <f:facet name="header">Id</f:facet>
-          <h:outputText value="${autor.id}" />
-        </h:column>
+				<h:column>
+					<f:facet name="header">Id</f:facet>
+					<h:outputText value="${autor.id}" />
+				</h:column>
 
-        <h:column>
-          <f:facet name="header">Nome</f:facet>
-          <h:outputText value="${autor.nome}" />
-        </h:column>
+				<h:column>
+					<f:facet name="header">Nome</f:facet>
+					<h:outputText value="${autor.nome}" />
+				</h:column>
 
-        <h:column>
-          <f:facet name="header">Remoção</f:facet>
-          <h:commandLink value="Remover" action="#{autorBean.remover(autor)}" />
-        </h:column>
+				<h:column>
+					<f:facet name="header">Remoção</f:facet>
+					<h:commandLink value="Remover" action="#{autorBean.remover(autor)}" />
+				</h:column>
 
-        <h:column>
-          <f:facet name="header">Alteração</f:facet>
+				<h:column>
+					<f:facet name="header">Alteração</f:facet>
 
-          <h:commandLink value="Alterar">
-            <f:setPropertyActionListener target="#{autorBean.autor}" value="#{autor}" />
-          </h:commandLink>
+					<h:commandLink value="Alterar">
+						<f:setPropertyActionListener target="#{autorBean.autor}" value="#{autor}" />
+					</h:commandLink>
 
-        </h:column>
+				</h:column>
 
 
 
-      </h:dataTable>
+			</h:dataTable>
 
-    </h:form>
+		</h:form>
 
-  </ui:define>
+	</ui:define>
 
-  <ui:define name="titulo-pagina">Cadastro de Autor</ui:define>
+	<ui:define name="titulo-pagina">Cadastro de Autor</ui:define>
 
 </ui:composition>
 
